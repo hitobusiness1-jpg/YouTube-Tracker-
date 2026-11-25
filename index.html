@@ -49,8 +49,8 @@ label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:800;
 svg.cum{width:100%;height:auto}.ax{stroke:var(--line);stroke-width:2}.l1{fill:none;stroke:var(--acc);stroke-width:3;stroke-linejoin:round}
 .l2{stroke:var(--mut);stroke-width:2;stroke-dasharray:6 5}.sv{fill:var(--mut);font:600 12px Manrope,sans-serif}.dot{fill:var(--red)}
 .chart{display:flex;align-items:flex-end;gap:5px;height:100px;overflow-x:auto}
-.chart div{flex:1;min-width:14px;background:var(--acc);border-radius:4px 4px 0 0;min-height:2px;transition:height .8s cubic-bezier(.2,.8,.2,1)}
-.wd{display:flex;align-items:flex-end;gap:8px;height:130px}.wc{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px}
+.chart .cb{flex:1;min-width:14px;height:100%;display:flex;align-items:flex-end;cursor:pointer;-webkit-tap-highlight-color:transparent;border-radius:6px;outline:0}.chart .cb b{display:block;width:100%;background:var(--acc);border-radius:4px 4px 0 0;min-height:2px;transition:height .8s cubic-bezier(.2,.8,.2,1),background .15s,opacity .15s}.chart.has .cb:not(.sel) b{opacity:.55}.chart .cb.sel b{background:var(--red);opacity:1}.chart .cb:focus-visible{box-shadow:0 0 0 2px var(--acc)}.chax{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mut);margin-top:-2px}.dro{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;justify-content:space-between;background:var(--srf2,var(--bg));border-radius:14px;padding:10px 14px;margin-top:2px;min-height:44px}.dro[hidden]{display:none}.dro .cd{font-weight:700;font-size:13px;color:var(--mut);display:inline-block}.dro .cd::first-letter{text-transform:uppercase}.dro .cv{font-weight:800;font-size:20px}.dro .cv small{font-size:12px;font-weight:600;color:var(--mut);margin-left:4px}.dro .cs{font-size:12.5px;color:var(--mut)}.dro .hint{font-size:12.5px;color:var(--mut)}.rtc .dro{background:color-mix(in srgb,var(--accInk) 14%,transparent);color:inherit}.rtc .dro .cd,.rtc .dro .cs,.rtc .dro .cv small,.rtc .dro .hint{color:inherit;opacity:.85}.hbars:not(.empty){cursor:pointer}.rtc .hbars.has i:not(.sel){opacity:.5}.rtc .hbars.has i.sel{opacity:1}svg.cum{cursor:pointer}.mk{stroke:var(--red);stroke-width:2;fill:none}.mkd{fill:var(--red);stroke:var(--card);stroke-width:2}.mkp{fill:var(--card);stroke:var(--mut);stroke-width:2}.hm .hc{cursor:pointer}.hm .hc.sel{opacity:1!important;background:var(--red)!important;outline:2px solid var(--red);outline-offset:1px}
+.wd{display:flex;align-items:stretch;gap:8px;height:130px;overflow:hidden}.wc{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;-webkit-tap-highlight-color:transparent}.wbw{flex:1;min-height:0;width:100%;display:flex;align-items:flex-end}.wc.sel .wb{opacity:1}.wc.sel span{color:var(--ink);font-weight:800}
 .wb{width:100%;background:var(--acc);opacity:.55;border-radius:6px 6px 0 0;transition:height .8s}.wc.top .wb{opacity:1;background:var(--red)}
 .hm{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;grid-auto-columns:1fr;gap:4px}.hc{aspect-ratio:1;border-radius:4px;min-width:10px}
 .ach{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px}
@@ -118,7 +118,7 @@ html,body{height:100%;overflow:hidden}
 .bg i:nth-child(2){background:radial-gradient(closest-side,var(--w2),transparent)}
 .bg i:nth-child(3){background:radial-gradient(closest-side,var(--w3),transparent)}
 .card{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}.grid .card:hover{transform:none}main>*{animation:none}
-.lite .bg{display:none}.lite .card{-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;background:color-mix(in srgb,var(--ink) 5%,var(--bg))}.lite *{animation:none!important;transition:none!important}
+.lite .bg{display:none}.lite .card{-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;background:color-mix(in srgb,var(--ink) 5%,var(--bg))}.lite *:not(#splash):not(#splash *){animation:none!important;transition:none!important}
 select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:8px 12px;min-height:40px;width:100%}
 .app{display:flex;flex-direction:column;height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-width:1100px;margin:0 auto}
 .app>.top{padding:10px 14px 4px}.app>.note{margin:4px 14px}
@@ -129,7 +129,7 @@ select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(-
 .tab{flex:1 0 auto;background:transparent;color:var(--mut);padding:0 12px;border-radius:12px;font-size:13px;white-space:nowrap}.tab.on{background:var(--acc);color:var(--accInk)}
 .row.ch{justify-content:flex-start;gap:12px}.ch img{width:48px;height:48px;border-radius:50%;object-fit:cover;background:var(--line);flex:none}.chi{display:flex;flex-direction:column;min-width:0;flex:1}.chi b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .qh{min-width:32px;width:32px;min-height:32px;padding:0;border-radius:50%}
-.help{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}.help ol{margin:0 0 6px;padding-left:20px}.help a{color:var(--acc)}
+.help{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}.help ol{margin:0 0 6px;padding-left:20px}.help ul{margin:4px 0 8px;padding-left:20px}.help[hidden]{display:none}.help a{color:var(--acc)}
 .sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
 .swb{background:var(--card);color:var(--ink);border:2px solid var(--line);display:flex;gap:8px;align-items:center;padding:0 10px}.swb::before{content:'';width:18px;height:18px;border-radius:50%;flex:none;background:linear-gradient(135deg,var(--s1) 50%,var(--s2) 50%);border:1px solid var(--line)}.swb[aria-pressed=true]{border-color:var(--acc)}
 :root[data-theme=yt]{--bg:#F9F9F9;--card:#fff;--ink:#0F0F0F;--mut:#606060;--line:#E5E5E5;--acc:#FF0000;--accInk:#fff;--red:#CC0000;--bd:#E5E5E5;--sh:none;--w1:transparent;--w2:transparent;--w3:transparent;color-scheme:light}
@@ -204,16 +204,48 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;border:0;back
 .aih{display:flex;justify-content:space-between;align-items:center}.aib{min-height:36px;padding:0 14px;font-size:13px}.ait p{margin:0 0 8px}.ait ul{margin:6px 0 0;padding-left:18px}.ait li{margin-bottom:6px}.ail{padding-left:18px;position:relative}.ail::before{content:'';position:absolute;left:3px;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--acc)}#aik{margin-top:10px;width:100%}
 .twrap{overflow-x:auto}.twrap table{border-collapse:collapse;width:100%;font-size:13px}.twrap th,.twrap td{padding:7px 8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}.twrap th{color:var(--mut);font-weight:700}.twrap .num{text-align:right;font-variant-numeric:tabular-nums}.twrap .ttl{max-width:200px;overflow:hidden;text-overflow:ellipsis}.twrap .tot td{font-weight:800;border-bottom:0}
 .tact>*{margin-top:8px;width:100%}.lnkb{display:grid;place-items:center;min-height:44px;border-radius:14px;background:var(--srf2);color:var(--ink);text-decoration:none;font-weight:700}
-</style></head><body><div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+
+#splash{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:calc(var(--px)*3);background:radial-gradient(120% 90% at 50% 40%,#F5444F 0%,#EF323D 45%,#C5202B 100%);overflow:hidden;touch-action:none;cursor:pointer;opacity:1;transition:opacity .7s ease;--px:min(calc((100vw - 48px)/37),13px)}
+#splash.out{opacity:0;pointer-events:none}
+#splash.out .sp-logo{transform:scale(1.12);transition:transform .7s ease}
+#splash .sp-logo{display:flex;flex-direction:column;gap:calc(var(--px)*2);align-items:center;transform:scale(1)}
+#splash .sp-line{display:flex;gap:var(--px)}
+#splash .sp-l{display:grid;grid-template-columns:repeat(5,var(--px));grid-template-rows:repeat(7,var(--px))}
+#splash .sp-l i{display:block;width:var(--px);height:var(--px);background:#fff;box-shadow:calc(var(--px)*.2) calc(var(--px)*.2) 0 rgba(0,0,0,.3);animation:spDrop .55s cubic-bezier(.2,1.5,.4,1) var(--d) both,spWave .7s ease var(--w) both}
+@keyframes spDrop{from{opacity:0;transform:translateY(calc(var(--px)*-9)) scale(.2) rotate(var(--r))}to{opacity:1;transform:none}}
+@keyframes spWave{0%{background:#fff;transform:none}40%{background:#FFE08A;transform:translateY(calc(var(--px)*-.45)) scale(1.12)}100%{background:#fff;transform:none}}
+#splash .sp-bar{display:flex;gap:calc(var(--px)*.5);margin-top:calc(var(--px)*2);padding:calc(var(--px)*.5);border:calc(var(--px)*.3) solid #fff;box-shadow:calc(var(--px)*.2) calc(var(--px)*.2) 0 rgba(0,0,0,.3)}
+#splash .sp-bar i{display:block;width:calc(var(--px)*2.2);height:calc(var(--px)*1.1);background:rgba(255,255,255,.18);animation:spSeg .01s linear var(--b) both}
+@keyframes spSeg{to{background:#fff}}
+#splash .sp-orb{position:absolute;bottom:-20px;width:var(--s);height:var(--s);background:#C6F34A;box-shadow:0 0 calc(var(--s)*1.2) #E6FF7A,inset calc(var(--s)*-.2) calc(var(--s)*-.2) 0 #7DB81E;opacity:0;animation:spOrb var(--t) ease-in var(--o) infinite}
+@keyframes spOrb{0%{opacity:0;transform:translate(0,0)}15%{opacity:.9}100%{opacity:0;transform:translate(var(--x),-110vh)}}
+#splash .sp-tap{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));font:700 11px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;color:rgba(255,255,255,.7);text-transform:uppercase}
+@media (prefers-reduced-motion:reduce){#splash{display:none}}
+</style></head><body>
+<div id="splash" aria-hidden="true"><div class="sp-logo" id="spl"></div><div class="sp-bar" id="spb"></div><div class="sp-tap">нажми, чтобы пропустить</div></div>
+<script>(function(){var sp=document.getElementById('splash');if(!sp)return;
+try{var st=JSON.parse(localStorage.getItem('shorts-tracker-v3'))||{};if(st.splash===false||matchMedia('(prefers-reduced-motion: reduce)').matches){sp.remove();return}}catch(e){}
+var G={T:['#####','..#..','..#..','..#..','..#..','..#..','..#..'],P:['####.','#...#','#...#','####.','#....','#....','#....'],E:['#####','#....','#....','####.','#....','#....','#####'],K:['#...#','#..#.','#.#..','##...','#.#..','#..#.','#...#'],S:['.####','#....','#....','.###.','....#','....#','####.'],H:['#...#','#...#','#...#','#####','#...#','#...#','#...#'],O:['.###.','#...#','#...#','#...#','#...#','#...#','.###.'],R:['####.','#...#','#...#','####.','#.#..','#..#.','#...#']};
+var lines=['TPEKEP','SHORTS'],logo=document.getElementById('spl'),n=0;
+lines.forEach(function(w,li){var ln=document.createElement('div');ln.className='sp-line';
+ w.split('').forEach(function(ch,ci){var L=document.createElement('div');L.className='sp-l';var g=G[ch];
+  for(var r=0;r<7;r++)for(var c=0;c<5;c++){if(g[r][c]!=='#')continue;var e=document.createElement('i');
+   var d=.25+li*.35+ci*.11+c*.02+Math.random()*.35;e.style.cssText='grid-area:'+(r+1)+'/'+(c+1)+';--d:'+d.toFixed(2)+'s;--w:'+(2.0+ci*.09+c*.025+li*.25).toFixed(2)+'s;--r:'+((Math.random()*160-80)|0)+'deg';L.appendChild(e);n++}
+  ln.appendChild(L)});logo.appendChild(ln)});
+var bar=document.getElementById('spb');for(var k=0;k<14;k++){var b=document.createElement('i');b.style.setProperty('--b',(.4+k*.17).toFixed(2)+'s');bar.appendChild(b)}
+for(var o=0;o<16;o++){var q=document.createElement('span');q.className='sp-orb';var sz=6+Math.random()*9;q.style.cssText='left:'+(Math.random()*100).toFixed(1)+'%;--s:'+sz.toFixed(1)+'px;--t:'+(2.2+Math.random()*1.6).toFixed(2)+'s;--o:'+(Math.random()*2.2).toFixed(2)+'s;--x:'+((Math.random()*80-40)|0)+'px';sp.appendChild(q)}
+var done=false,t1,t2;function end(){if(done)return;done=true;clearTimeout(t1);clearTimeout(t2);sp.classList.add('out');setTimeout(function(){sp.remove()},800)}
+sp.addEventListener('click',end);t1=setTimeout(end,3700);t2=setTimeout(function(){sp.remove()},5500)})()</script>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
 <canvas id="fx" aria-hidden="true"></canvas><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="app">
 <div class="top"><div><div class="lab" id="lab">ТРЕКЕР</div><h1>Трекер Shorts</h1></div><div class="hb"><button class="ib" id="mode" aria-label="Ночной режим"></button><button class="ib" id="theme" aria-label="Оформление" aria-haspopup="dialog"></button></div><div class="shd" id="shd"></div><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Оформление"><div class="grab"></div><div class="sh-h"><h2>Оформление</h2><button class="ib" id="sx" aria-label="Закрыть">✕</button></div><div class="sub">Режим</div><div class="seg" id="seg"></div><div class="sub">Цветовая тема</div><div class="pal" id="pal"></div></div><div class="sheet" id="csheet" role="dialog" aria-modal="true" aria-label="Каналы"><div class="grab"></div><div class="sh-h"><h2>Текущий канал</h2><button class="ib" id="cx" aria-label="Закрыть">✕</button></div><div id="csl"></div><button class="ghost" id="cnow">Обновить сейчас</button><button class="ghost" id="cmore">Добавить канал</button></div></div>
 <div class="note" id="note" hidden>Браузер не дал сохранить данные, после закрытия вкладки они пропадут. Сделай копию через «Скачать JSON».</div>
 <div id="pager"><section class="pg" id="p0"><div class="chrow"><button class="chb" id="chb" aria-haspopup="dialog" aria-label="Выбрать канал"><span class="cav"><img id="cha" alt="" width="40" height="40" referrerpolicy="no-referrer" hidden></span><span class="chx"><b id="chn">Добавить канал</b><span id="chs"></span></span></button></div><div class="card aic" id="aic"><h2>Обзор и советы</h2><div class="ait" id="ait"></div></div><div class="card quick"><div class="qrow"><input type="text" id="vu" placeholder="Вставь ссылку на Shorts, можно сразу несколько" aria-label="Ссылки на Shorts" autocomplete="off"><button id="vadd">Добавить</button><button class="ghost" id="sync">Синхронизировать</button></div>
 <div class="qrow2"><label class="chk"><input type="checkbox" id="vn" checked>Новый ролик: засчитать просмотры</label><span class="sub" id="sst" role="status" aria-live="polite"></span></div></div>
-<div class="r2 a"><div class="card rtc"><div><div class="live"><b></b>Всего просмотров</div><div class="big" id="hv">0</div><div class="sub" id="hvs"></div></div><div class="hbars" id="hbars" role="img" aria-label="Просмотры за 32 дня"></div></div>
+<div class="r2 a"><div class="card rtc"><div><div class="live"><b></b>Всего просмотров</div><div class="big" id="hv">0</div><div class="sub" id="hvs"></div></div><div class="hbars" id="hbars" role="group" aria-label="Просмотры за 32 дня, нажми на день"></div><div class="dro" id="dro0" style="grid-column:1/-1" hidden></div></div>
 <div class="card hero"><div class="ringbox"><svg viewBox="0 0 80 80" width="84" height="84" role="img" aria-label="Роликов сегодня"><circle cx="40" cy="40" r="34" class="rt"/><circle cx="40" cy="40" r="34" class="rf" id="rf"/><text x="40" y="46" text-anchor="middle" class="rtx" id="rtx">0/2</text></svg><div class="sub">роликов сегодня</div></div>
-<div class="hbody"><div class="lab">УРОВЕНЬ <span id="lvn">1</span></div><div class="big" id="lvt">Новичок</div><div class="bar"><i id="xf"></i></div><div class="sub" id="xl"></div><div class="chips"><span class="chip" id="st"></span><span class="chip" id="bs"></span></div></div></div></div>
+<div class="hbody"><div class="lab" style="display:flex;align-items:center;gap:8px">УРОВЕНЬ <span id="lvn">1</span><button class="ghost qh" id="xph" type="button" aria-label="Как начисляется XP" aria-expanded="false" aria-controls="xph2">?</button></div><div class="big" id="lvt">Новичок</div><div class="bar"><i id="xf"></i></div><div class="sub" id="xl"></div><div class="help" id="xph2" hidden><b>Как начисляется XP</b><ul><li><b>+10 XP</b> за каждый добавленный ролик.</li><li><b>+1 XP</b> за каждые 1 000 просмотров по всем дням в журнале.</li></ul><div>Чем выше уровень, тем больше XP нужно до следующего. Уровень N открывается при 15 × (N − 1)² XP:</div><ul><li>2 уровень: с 15 XP</li><li>3 уровень: с 60 XP</li><li>4 уровень: с 135 XP</li><li>5 уровень: с 240 XP</li><li>6 уровень: с 375 XP, дальше по той же формуле</li></ul><div>Звания: 1 Новичок, 2 Монтажёр, 3 Автор, 4 Креатор, 5 Профи, 6 и выше Легенда.</div><div class="sub" id="xpd" style="margin-top:6px"></div></div><div class="chips"><span class="chip" id="st"></span><span class="chip" id="bs"></span></div></div></div></div>
 <div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><div class="lab">ПРОГРЕСС К ЦЕЛИ</div><div class="big" id="pct">0%</div></div><div class="bar"><i id="fill"></i></div><div class="sub" id="pline"></div><div class="sg" id="sg"></div><div id="fc" style="font-size:13px;line-height:1.5"></div></div>
 <div class="grid">
 <div class="card"><div class="lab">РОЛИКОВ</div><div class="big" id="sv">0</div><div class="sub" id="sv2"></div></div>
@@ -225,10 +257,10 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;border:0;back
 <div class="card"><div class="lab">ЛУЧШИЙ ДЕНЬ</div><div class="big" id="a3">0</div><div class="sub" id="a3s">просмотров</div></div>
 <div class="card"><div class="lab">НЕДЕЛЯ К НЕДЕЛЕ</div><div class="big" id="a4">—</div><div class="sub">7 дней к прошлым 7</div></div>
 </div>
-</section><section class="pg" id="p1"><div class="r2"><div class="card"><h2>Заработок и нужный темп</h2><svg class="cum" id="cum" viewBox="0 0 600 200" role="img" aria-label="График заработка"></svg><div class="sub">Сплошная линия — заработок, пунктир — нужный темп.</div></div>
-<div class="card"><h2>Просмотры за 14 дней</h2><div class="chart" id="ch" role="img" aria-label="График просмотров за 14 дней"></div></div></div>
-<div class="r2"><div class="card"><h2>Лучшие дни недели</h2><div class="wd" id="wd" role="img" aria-label="Средние просмотры по дням недели"></div><div class="sub" id="wdn"></div></div>
-<div class="card"><h2>Календарь активности</h2><div class="hm" id="hm" role="img" aria-label="Календарь просмотров за 12 недель"></div><div class="sub">12 недель, чем ярче клетка, тем больше просмотров.</div></div></div>
+</section><section class="pg" id="p1"><div class="r2"><div class="card"><h2>Заработок и нужный темп</h2><svg class="cum" id="cum" viewBox="0 0 600 200" role="img" aria-label="График заработка"></svg><div class="sub">Сплошная линия — заработок, пунктир — нужный темп. Нажми на график, чтобы увидеть день.</div><div class="dro" id="droc"></div></div>
+<div class="card"><h2>Просмотры за 14 дней</h2><div class="chart" id="ch" role="group" aria-label="Просмотры за 14 дней, нажми на день"></div><div class="chax" id="chax"></div><div class="dro" id="dro1"></div></div></div>
+<div class="r2"><div class="card"><h2>Лучшие дни недели</h2><div class="wd" id="wd" role="group" aria-label="Средние просмотры по дням недели, нажми на день"></div><div class="sub" id="wdn"></div><div class="dro" id="dro2"></div></div>
+<div class="card"><h2>Календарь активности</h2><div class="hm" id="hm" role="group" aria-label="Календарь просмотров за 12 недель, нажми на клетку"></div><div class="sub">12 недель, чем ярче клетка, тем больше просмотров.</div><div class="dro" id="dro3"></div></div></div>
 <div class="card" id="tcard"><h2>Таблица просмотров за период</h2><div class="sub">Все ролики текущего канала, выложенные в выбранные даты, с просмотрами на сегодня. Нужен API-ключ канала.</div><div class="form"><label>С даты<input type="date" id="tfrom"></label><label>По дату<input type="date" id="tto"></label><button id="tgo">Собрать</button></div><div class="sub" id="tsum" role="status" aria-live="polite"></div><div class="twrap" id="twrap"></div><div class="tact" id="tact" hidden><button id="tdl">Скачать для Google Таблиц</button><button class="ghost" id="tcp">Скопировать таблицу</button><a class="lnkb" href="https://sheets.new" target="_blank" rel="noopener noreferrer">Открыть Google Таблицы</a><div class="sub">Скачай файл, затем в Google Таблицах: Файл, Импорт, Загрузка. Или нажми «Скопировать таблицу» и вставь в пустую таблицу через Ctrl+V.</div></div></div></section><section class="pg" id="p2"><div class="r2"><div class="card"><h2>Внести день вручную</h2><div class="form"><label>Дата<input type="date" id="d"></label><label>Роликов<input type="number" id="v" min="0" inputmode="numeric" value="1"></label><label>Просмотров за день<input type="number" id="w" min="0" inputmode="numeric" placeholder="0"></label><button id="add">Сохранить</button></div><div class="scr" id="days"></div></div>
 <div class="card"><h2>Ролики</h2><div class="scr" id="vl"></div></div></div>
 </section><section class="pg" id="p3"><div class="r2"><div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline"><h2>Награды</h2><span class="sub" id="achn"></span></div><div class="ach" id="ach"></div></div>
@@ -237,7 +269,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;border:0;back
 </section><section class="pg" id="p5"><div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Мои каналы</h2><button class="ghost" id="cref">Обновить</button></div><div id="chl"></div><div class="form"><label>Канал: @имя, ссылка или ID<input type="text" id="cq" placeholder="@mychannel" autocomplete="off"></label><label>Ключ API<select id="ck"></select></label><button id="cadd">Добавить канал</button></div><div class="sub" id="cst" role="status" aria-live="polite"></div></div>
 <div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h2>API-ключи</h2><button class="ghost qh" id="khelp" aria-label="Где взять ключ API" aria-expanded="false">?</button></div><div class="help" id="kh" hidden><ol><li>Открой <a href="https://console.cloud.google.com/" target="_blank" rel="noopener noreferrer">Google Cloud Console</a> и войди в аккаунт Google.</li><li>Создай проект: выбор проекта вверху, затем «Новый проект».</li><li>«APIs &amp; Services» → «Library», найди «YouTube Data API v3» и нажми «Enable».</li><li>«Credentials» → «Create credentials» → «API key».</li><li>Скопируй ключ (он начинается с AIza) и вставь сюда. Лучше ограничить его: «Restrict key» → только YouTube Data API v3.</li></ol><div class="sub">Бесплатной квоты 10 000 единиц в день хватает: проверка канала стоит 1 единицу.</div></div><div id="kl"></div><div class="form"><label>Название<input type="text" id="kn" maxlength="30" placeholder="Основной"></label><label>YouTube Data API ключ<input type="password" id="key" autocomplete="off" placeholder="AIza..."></label><button id="kadd">Сохранить ключ</button></div><div class="sub">Ключи хранятся только в этом браузере и не блокируются. В резервную копию не попадают. Для каждого канала можно выбрать свой ключ.</div></div>
 </section><section class="pg" id="p6"><div class="card"><h2>Валюта и доход</h2><div class="form"><label>Валюта<select id="cur"><option value="RUB">₽ Рубли</option><option value="USD">$ Доллары</option><option value="KZT">₸ Тенге</option></select></label><label>CPM, $ за 1000 просмотров<input type="number" id="cpm" step="0.01" min="0"></label><label>Роликов в день (план)<input type="number" id="daily" min="1" inputmode="numeric"></label></div><label class="chk"><input type="checkbox" id="auto">Обновлять курс автоматически</label><div class="form"><label>₽ за 1 $<input type="number" id="fr" step="0.01" min="0.01"></label><label>₸ за 1 $<input type="number" id="fk" step="0.01" min="0.01"></label><button class="ghost" id="fxb">Обновить курс</button></div><div class="sub" id="fxs"></div></div>
-<div class="card"><h2>Производительность</h2><label class="chk"><input type="checkbox" id="lite">Лёгкий режим для слабых устройств: без теней и анимаций</label><div class="sub">Тема и ночной режим переключаются кнопками в шапке.</div></div>
+<div class="card"><h2>Производительность</h2><label class="chk"><input type="checkbox" id="splashopt" checked>Заставка при запуске</label><label class="chk"><input type="checkbox" id="lite">Лёгкий режим для слабых устройств: без теней и анимаций</label><div class="sub">Тема и ночной режим переключаются кнопками в шапке.</div></div>
 <details class="card"><summary>Разбор цифр</summary><div class="sub">Темп, нужный темп и лучший день недели.</div><div><button id="ask">Разобрать мои цифры</button></div><pre id="ans"></pre></details>
 <details class="card"><summary>Резервная копия</summary><div class="sub">Данные хранятся в этом браузере. API-ключ в копию не попадает.</div><div class="form"><button id="exp">Скачать JSON</button><label>Восстановить из файла<input type="file" id="imp" accept="application/json,.json"></label></div></details>
 </section></div><nav class="tabs" id="tabs" role="tablist"></nav></div>
@@ -245,6 +277,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;border:0;back
 const $=id=>document.getElementById(id),RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const fmt=n=>Math.round(n).toLocaleString('ru-RU');
+let CHS=null,CHC=null,CHD=[],HK=[],HS=null,HM=null,WDS=-2,WDD=null,CUMD=null,CUMI=-1;const WDF=['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
 const pl=(n,a,b,c)=>{n=Math.abs(n)%100;const m=n%10;return n>10&&n<20?c:m>1&&m<5?b:m==1?a:c};
 const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 const LV=['Новичок','Монтажёр','Автор','Креатор','Профи','Легенда'],WD=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
@@ -289,16 +322,17 @@ function calc(){
 function renderTop(c){
  $('rf').style.strokeDashoffset=213.6*(1-Math.min(1,c.V0/c.dly));$('rtx').textContent=c.V0+'/'+c.dly;
  $('lvt').textContent=LV[Math.min(c.lvl-1,LV.length-1)];$('lvn').textContent=c.lvl;
- $('xf').style.width=((c.xp-c.lo)/(c.hi-c.lo)*100)+'%';$('xl').textContent=fmt(c.xp)+' XP · до уровня '+(c.lvl+1)+' ещё '+fmt(c.hi-c.xp);
+ $('xf').style.width=((c.xp-c.lo)/(c.hi-c.lo)*100)+'%';$('xl').textContent=fmt(c.xp)+' XP · до уровня '+(c.lvl+1)+' ещё '+fmt(c.hi-c.xp);$('xpd').textContent='У тебя сейчас: '+fmt(c.v)+' × 10 + '+fmt(Math.floor(c.w/1000))+' = '+fmt(c.xp)+' XP';
  $('st').textContent='Серия: '+c.streak+' '+pl(c.streak,'день','дня','дней');$('bs').textContent='Рекорд: '+c.best+' '+pl(c.best,'день','дня','дней');
  const p=c.goal?Math.min(100,c.rub/c.goal*100):0;$('pct').textContent=p.toFixed(1).replace('.',',')+'%';$('fill').style.width=p+'%';
  $('pline').textContent=M(c.rub)+' из '+M(c.goal)+' · куплено на '+M(c.bought);$('lab').textContent='ТРЕКЕР'+(c.end?' · ДО '+c.end.toLocaleDateString('ru-RU',{day:'numeric',month:'long',year:'numeric'}).toUpperCase():'');renderHero(c)}
 function renderHero(c){
  cnt('hv',c.w);$('hvs').textContent='≈ '+M(c.rub)+' заработано · '+(c.v?fmt(c.v)+' '+pl(c.v,'ролик','ролика','роликов'):'роликов пока нет');
- const vals=[];for(let i=31;i>=0;i--){const k=iso(new Date(c.t0.getFullYear(),c.t0.getMonth(),c.t0.getDate()-i));vals.push(S.log[k]?+S.log[k].w||0:0)}
+ const vals=[],hk=[];CHC=c;for(let i=31;i>=0;i--){const k=iso(new Date(c.t0.getFullYear(),c.t0.getMonth(),c.t0.getDate()-i));hk.push(k);vals.push(S.log[k]?+S.log[k].w||0:0)}
  const mx=Math.max(1,...vals),any=vals.some(x=>x>0),b=$('hbars');
  if(!b.children.length)b.innerHTML=vals.map(()=>'<i></i>').join('');b.classList.toggle('empty',!any);
  [...b.children].forEach((e,i)=>{e.style.height=(any?Math.max(8,vals[i]/mx*100):24+Math.round(Math.sin(i*.35)*16+Math.cos(i*.18)*12))+'%';e.title=fmt(vals[i])+' просмотров'});
+ HK=hk;if(!HK.includes(HS))HS=HK[HK.length-1];b.classList.toggle('has',any);$('dro0').hidden=!any;if(any)showHero(HS);
  const sg=$('sg');sg.innerHTML='';let rest=c.rub;
  c.gl.forEach(g=>{const p=g.p,e=Math.min(p,Math.max(0,rest));rest-=e;const r=el('div'),t=el('div','sgt'),bar=el('div','bar'),f=el('i');
   t.append(el('span',null,g.n+(g.d?' · куплено':'')),el('span','sub',M(e)+' / '+M(p)));f.style.width=(p?e/p*100:0)+'%';bar.append(f);r.append(t,bar);sg.append(r)});if(!c.gl.length)sg.append(el('div','sub','Добавь цель на вкладке «Цели», и здесь появится прогресс.'))}
@@ -313,22 +347,51 @@ function renderKpi(c){
  if(c.left&&c.avg7>0){const dd=c.remViews/c.avg7;f+='<br>Твой темп за 7 дней: '+fmt(c.avg7)+' в день. '+(c.remViews<=0?'Цель набрана.':dd<=c.left?'Так цель будет набрана примерно через '+Math.ceil(dd)+' '+pl(Math.ceil(dd),'день','дня','дней')+'.':'Так цель наберётся позже срока: темп надо увеличить примерно в '+(pd/c.avg7).toFixed(1).replace('.',',')+' раза.')}
  else if(c.left)f+='<br>Внеси несколько дней, и я покажу темп и дату цели.';$('fc').innerHTML=f}
 function renderCum(c){const s=$('cum');
- if(!c.ks.length||c.perK<=0||c.goal<=0||!c.end){s.innerHTML='<text x="300" y="100" text-anchor="middle" class="sv">Внеси первые дни, и здесь появится график</text>';return}
+ if(!c.ks.length||c.perK<=0||c.goal<=0||!c.end){s.innerHTML='<text x="300" y="100" text-anchor="middle" class="sv">Внеси первые дни, и здесь появится график</text>';CUMD=null;$('droc').innerHTML='';return}
  const a=new Date(c.ks[0]+'T00:00:00'),e=c.end,N=Math.max(2,Math.round((e-a)/864e5)+1),X=i=>10+i/(N-1)*580,Y=r=>190-Math.min(1,r/c.goal)*170;
- const n=Math.max(1,Math.min(N,Math.round((c.t0-a)/864e5)+1));let cum=0,pts=[];
- for(let i=0;i<n;i++){const k=iso(new Date(a.getFullYear(),a.getMonth(),a.getDate()+i));cum+=(S.log[k]?+S.log[k].w||0:0)/1000*c.perK;pts.push(X(i).toFixed(1)+','+Y(cum).toFixed(1))}
+ const n=Math.max(1,Math.min(N,Math.round((c.t0-a)/864e5)+1));let cum=0,pts=[],cums=[],vals=[];
+ for(let i=0;i<n;i++){const k=iso(new Date(a.getFullYear(),a.getMonth(),a.getDate()+i));const wv=S.log[k]?+S.log[k].w||0:0;vals.push(wv);cum+=wv/1000*c.perK;cums.push(cum);pts.push(X(i).toFixed(1)+','+Y(cum).toFixed(1))}
  const L=pts[pts.length-1].split(',');
- s.innerHTML='<line x1="10" y1="190" x2="590" y2="190" class="ax"/><line x1="'+X(0)+'" y1="190" x2="'+X(N-1)+'" y2="20" class="l2"/><polyline points="'+pts.join(' ')+'" class="l1"/><circle cx="'+L[0]+'" cy="'+L[1]+'" r="5" class="dot"/><text x="12" y="14" class="sv">цель '+M(c.goal)+'</text>'}
+ s.innerHTML='<line x1="10" y1="190" x2="590" y2="190" class="ax"/><line x1="'+X(0)+'" y1="190" x2="'+X(N-1)+'" y2="20" class="l2"/><polyline points="'+pts.join(' ')+'" class="l1"/><circle cx="'+L[0]+'" cy="'+L[1]+'" r="5" class="dot"/><text x="12" y="14" class="sv">цель '+M(c.goal)+'</text>';CUMD={a,N,n,cums,vals,X,Y,c};if(CUMI<0||CUMI>=N)CUMI=n-1;cumMark(CUMI)}
+const dlong=k=>new Date(k+'T00:00:00').toLocaleDateString('ru-RU',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+function dayHtml(k){const c=CHC||{},d=new Date(k+'T00:00:00');
+ if(c.t0&&d>c.t0)return'<span class="cd">'+dlong(k)+'</span><span class="cs">этот день ещё впереди</span>';
+ const e=S.log[k],w=e?+e.w||0:0,v=e?+e.v||0:0,pd=new Date(d);pd.setDate(pd.getDate()-1);const pe=S.log[iso(pd)],pw=pe?+pe.w||0:0;
+ const ex=[];if(v>0)ex.push('роликов: '+v);if(c.perK>0)ex.push('≈ '+M(w/1000*c.perK));
+ if(pw>0){const q=Math.round((w-pw)/pw*100);ex.push((q>0?'+':'')+q+'% к предыдущему дню')}
+ return'<span class="cd">'+dlong(k)+'</span><span class="cv">'+fmt(w)+'<small>просмотров</small></span>'+(ex.length?'<span class="cs">'+ex.join(' · ')+'</span>':'')}
+function showDay(k){$('dro1').innerHTML=dayHtml(k);document.querySelectorAll('#ch .cb').forEach(b=>b.classList.toggle('sel',b.dataset.k===k));CHS=k}
+function pickDay(t){const b=t.closest&&t.closest('.cb');if(b)showDay(b.dataset.k)}
+function showHero(k){HS=k;const r=$('dro0');r.innerHTML=dayHtml(k);[...$('hbars').children].forEach((e,i)=>e.classList.toggle('sel',HK[i]===k))}
+function showWd(i){WDS=i;const r=$('dro2');document.querySelectorAll('#wd .wc').forEach(x=>x.classList.toggle('sel',+x.dataset.i===i));
+ if(!WDD||i<0||!WDD.av[i]&&!WDD.c[i][1]){r.innerHTML='<span class="hint">Нажми на день недели, чтобы увидеть подробности</span>';return}
+ const av=WDD.av[i],n=WDD.c[i][1],tot=WDD.c[i][0],all=WDD.c.reduce((q,x)=>q+x[0],0),ex=['дней в журнале: '+n,'всего '+fmt(tot)];
+ if(all>0)ex.push(Math.round(tot/all*100)+'% всех просмотров');if(WDD.perK>0)ex.push('≈ '+M(av/1000*WDD.perK)+' в день');if(i===WDD.bi)ex.push('лучший день');
+ r.innerHTML='<span class="cd">'+WDF[i]+'</span><span class="cv">'+fmt(av)+'<small>в среднем за день</small></span><span class="cs">'+ex.join(' · ')+'</span>'}
+function showHm(k){HM=k;const r=$('dro3');document.querySelectorAll('#hm .hc').forEach(x=>x.classList.toggle('sel',x.dataset.k===k));
+ r.innerHTML=k?dayHtml(k):'<span class="hint">Нажми на клетку, чтобы увидеть день</span>'}
+function cumMark(i){const D=CUMD;if(!D)return;CUMI=i;const s=$('cum');s.querySelectorAll('.mk').forEach(e=>e.remove());
+ const x=D.X(i).toFixed(1),known=i<D.n,val=known?D.cums[i]:0,plan=D.c.goal*i/(D.N-1),dk=iso(new Date(D.a.getFullYear(),D.a.getMonth(),D.a.getDate()+i));
+ s.insertAdjacentHTML('beforeend','<line class="mk" x1="'+x+'" y1="20" x2="'+x+'" y2="190"/>'+(known?'<circle class="mk mkd" cx="'+x+'" cy="'+D.Y(val).toFixed(1)+'" r="5"/>':'')+'<circle class="mk mkp" cx="'+x+'" cy="'+D.Y(plan).toFixed(1)+'" r="4"/>');
+ const ex=[];if(known){ex.push('просмотров за день: '+fmt(D.vals[i]));const df=val-plan;ex.push(df>=0?'впереди плана на '+M(df):'отстаёт от плана на '+M(-df))}else ex.push('день впереди');
+ ex.push('по плану: '+M(plan));
+ $('droc').innerHTML='<span class="cd">'+dlong(dk)+'</span><span class="cv">'+M(known?val:plan)+'<small>'+(known?'накоплено':'по плану')+'</small></span><span class="cs">'+ex.join(' · ')+'</span>'}
 function renderCharts(c){
  const ds=[];for(let i=13;i>=0;i--)ds.push(iso(new Date(c.t0.getFullYear(),c.t0.getMonth(),c.t0.getDate()-i)));
  const mx=Math.max(1,...ds.map(k=>S.log[k]?+S.log[k].w||0:0));
- $('ch').innerHTML=ds.map(k=>{const x=S.log[k]?+S.log[k].w||0:0;return'<div title="'+k+': '+fmt(x)+'" style="height:'+Math.max(2,x/mx*100)+'%"></div>'}).join('');
+ if(!ds.includes(CHS))CHS=ds[ds.length-1];CHC=c;CHD=ds;
+ $('ch').innerHTML=ds.map(k=>{const x=S.log[k]?+S.log[k].w||0:0;return'<div class="cb'+(k===CHS?' sel':'')+'" data-k="'+k+'" role="button" tabindex="0" aria-label="'+k+': '+fmt(x)+' просмотров" style="--h:'+Math.max(2,x/mx*100)+'%"><b style="height:'+Math.max(2,x/mx*100)+'%"></b></div>'}).join('');
+ $('ch').classList.add('has');
+ const dd=k=>new Date(k+'T00:00:00').toLocaleDateString('ru-RU',{day:'numeric',month:'short'});$('chax').innerHTML='<span>'+dd(ds[0])+'</span><span>'+dd(ds[ds.length-1])+'</span>';
+ showDay(CHS);
  const g=$('wd');g.innerHTML='';const av=c.wd.map(x=>x[1]?x[0]/x[1]:0),m2=Math.max(1,...av),bi=av.indexOf(Math.max(...av));
- av.forEach((x,i)=>{const col=el('div','wc'+(x>0&&i===bi?' top':''));const b=el('div','wb');b.style.height=Math.max(3,x/m2*100)+'px';b.title=WD[i]+': '+fmt(x);col.append(b,el('span','sub',WD[i]));g.append(col)});
+ WDD={av,c:c.wd,bi:Math.max(...av)>0?bi:-1,perK:c.perK};if(WDS<-1||WDS>6)WDS=WDD.bi;
+ av.forEach((x,i)=>{const col=el('div','wc'+(x>0&&i===bi?' top':'')+(i===WDS?' sel':''));col.dataset.i=i;const w=el('div','wbw'),b=el('div','wb');b.style.height=Math.max(3,x/m2*100)+'%';b.title=WD[i]+': '+fmt(x);w.append(b);col.append(w,el('span','sub',WD[i]));g.append(col)});
+ showWd(WDS);
  $('wdn').textContent=Math.max(...av)>0?'Лучший день недели: '+WD[bi]+', в среднем '+fmt(av[bi])+' просмотров':'Нужно хотя бы несколько дней данных';
  const h=$('hm');h.innerHTML='';const wt=(c.t0.getDay()+6)%7;let hx=1;const cells=[];
  for(let i=wt+77;i>=wt-6;i--){const k=iso(new Date(c.t0.getFullYear(),c.t0.getMonth(),c.t0.getDate()-i)),w=S.log[k]?+S.log[k].w||0:0;hx=Math.max(hx,w);cells.push([k,w,i<0])}
- cells.forEach(([k,w,f])=>{const d=el('div','hc');d.title=k+': '+fmt(w);d.style.background=w>0?'var(--acc)':'var(--line)';d.style.opacity=f?.3:w>0?.3+.7*w/hx:1;h.append(d)})}
+ cells.forEach(([k,w,f])=>{const d=el('div','hc');d.title=k+': '+fmt(w);d.dataset.k=k;d.style.background=w>0?'var(--acc)':'var(--line)';d.style.opacity=f?.3:w>0?.3+.7*w/hx:1;h.append(d)});if(!cells.some(x=>x[0]===HM))HM=null;showHm(HM)}
 function renderAch(c){const g=$('ach');g.innerHTML='';A.forEach((a,i)=>{const ok=AR[i],b=el('div','b'+(ok?' on':''));b.append(el('div','bc',a[1]),el('div','bt',a[2]));b.setAttribute('aria-label',a[2]+(ok?': получено':': закрыто'));g.append(b)});$('achn').textContent=AR.filter(Boolean).length+' из '+A.length}
 function renderPrizes(c){const g=$('prz');g.innerHTML='';S.prizes.sort((a,b)=>a.at-b.at);
  const nx=S.prizes.find(p=>!p.got&&c.v<p.at);$('pnx').textContent=nx?'До следующего приза: '+(nx.at-c.v)+' '+pl(nx.at-c.v,'ролик','ролика','роликов')+'.':'Все доступные призы открыты, добавь новые.';
@@ -350,7 +413,7 @@ function renderCh(){const g=$('chl');g.innerHTML='';if(!S.channels.length)g.appe
  const ks=KL(),sel=$('ck'),kl=$('kl');sel.innerHTML='';kl.innerHTML='';
  ks.forEach(k=>{const o=el('option',null,k.label);o.value=k.id;sel.append(o);const r=el('div','row');r.append(el('span',null,k.label+' · '+k.key.slice(0,4)+'…'+k.key.slice(-3)));const b=el('button','ghost','×');b.setAttribute('aria-label','Удалить ключ '+k.label);b.onclick=()=>{KW(KL().filter(z=>z.id!==k.id));render()};r.append(b);kl.append(r)});
  try{if((localStorage.getItem(KEYAPI)||'')[0]==='{')CS('Старый ключ был зашифрован паролем. Добавь его заново: теперь он сохранится без блокировки.')}catch(e){}}
-function renderSet(){[['cpm',S.cpm],['daily',S.daily],['fr',S.fx.RUB],['fk',S.fx.KZT]].forEach(([i,v])=>{if(document.activeElement!==$(i))$(i).value=+(+v).toFixed(2)});$('cur').value=S.cur;$('auto').checked=!!S.auto;$('lite').checked=!!S.lite;
+function renderSet(){[['cpm',S.cpm],['daily',S.daily],['fr',S.fx.RUB],['fk',S.fx.KZT]].forEach(([i,v])=>{if(document.activeElement!==$(i))$(i).value=+(+v).toFixed(2)});$('cur').value=S.cur;$('auto').checked=!!S.auto;$('lite').checked=!!S.lite;$('splashopt').checked=S.splash!==false;
  $('fxs').textContent='1 $ = '+(+S.fx.RUB).toFixed(2)+' ₽ = '+(+S.fx.KZT).toFixed(2)+' ₸'+(S.auto&&S.fxT?' · обновлено '+new Date(S.fxT).toLocaleString('ru-RU'):' · курс вручную');
  applyTheme()}
 let AR=[],PI=-1;const DR=new Set(),PR={1:c=>{renderCum(c);renderCharts(c)},2:c=>{renderDays(c);renderVideos()},3:c=>{renderAch(c);renderPrizes(c)},4:renderGoals,5:renderCh,6:renderSet};
@@ -374,6 +437,7 @@ $('cref').onclick=async()=>{CS('Обновляю…');const n=await chr();if(n)C
 $('cadd').onclick=async()=>{const q=pq($('cq').value),kid=$('ck').value,key=kv(kid);if(!q)return CS('Вставь @имя или ссылку на канал.',1);if(!key)return CS('Сначала сохрани API-ключ ниже.',1);CS('Ищу канал…');
  try{const c=await chq(q,key);c.kid=kid;const i=S.channels.findIndex(x=>x.cid===c.cid);if(i<0)S.channels.push(c);else S.channels[i]=c;if(!S.active)S.active=c.cid;$('cq').value='';save();render();CS('Добавлен: '+c.title)}catch(e){CS('Ошибка: '+e.message,1)}};
 $('kadd').onclick=()=>{const k=$('key').value.trim(),a=KL();if(!/^AIza[\w-]{30,}$/.test(k))return CS('Это не похоже на ключ: он начинается с AIza.',1);if(a.some(z=>z.key===k))return CS('Такой ключ уже сохранён.',1);a.push({id:'k'+Date.now().toString(36),label:$('kn').value.trim()||'Ключ '+(a.length+1),key:k});if(KW(a)){$('key').value='';$('kn').value='';render();CS('Ключ сохранён в этом браузере и не заблокируется.')}};
+$('xph').onclick=()=>{const h=$('xph2');h.hidden=!h.hidden;$('xph').setAttribute('aria-expanded',!h.hidden)};
 $('khelp').onclick=()=>{const h=$('kh');h.hidden=!h.hidden;$('khelp').setAttribute('aria-expanded',!h.hidden)};
 async function fxu(){try{const r=await fetch('https://open.er-api.com/v6/latest/USD'),d=await r.json();if(d.result!=='success'||!(d.rates.RUB>0&&d.rates.KZT>0))throw 0;S.fx={RUB:d.rates.RUB,USD:1,KZT:d.rates.KZT};S.fxT=Date.now();save();render();return 1}catch(e){return 0}}
 $('fxb').onclick=async()=>{$('fxs').textContent='Обновляю…';if(!(await fxu()))$('fxs').textContent='Не удалось получить курс. Введи его вручную.'};
@@ -381,6 +445,7 @@ $('cur').onchange=()=>{S.cur=$('cur').value;save();render()};
 $('auto').onchange=()=>{S.auto=$('auto').checked;save();if(S.auto)fxu();else render()};
 $('fr').onchange=()=>{S.fx.RUB=Math.max(.01,+$('fr').value||80);S.auto=false;save();render()};
 $('fk').onchange=()=>{S.fx.KZT=Math.max(.01,+$('fk').value||480);S.auto=false;save();render()};
+$('splashopt').onchange=()=>{S.splash=$('splashopt').checked;save()};
 $('lite').onchange=()=>{S.lite=$('lite').checked;applyTheme();save()};
 $('gadd').onclick=()=>{const n=$('gn').value.trim(),p=+$('gp').value;if(!n||!(p>0))return toast('Введи название и цену цели.');S.goals.push({n:n,p:p,cur:S.cur,date:$('gd').value||'',d:false});$('gn').value='';$('gp').value='';$('gd').value='';save();render()};
 const AC=()=>S.channels.find(x=>x.cid===S.active)||S.channels[0],kf=n=>n>=1e6?(n/1e6).toFixed(1).replace('.',',')+' млн':n>=1e3?(n/1e3).toFixed(1).replace('.',',')+' тыс.':String(n),WDA=['воскресенье','понедельник','вторник','среду','четверг','пятницу','субботу'];
@@ -497,4 +562,11 @@ TH.forEach(t=>{const b=el('button','pv');b.dataset.t=t[0];b.append(el('span',nul
 DQ.addEventListener&&DQ.addEventListener('change',()=>{if(S.mode==='auto')applyTheme()});
 applyTheme();ready=true;go(0);render();
 if(S.auto&&Date.now()-(S.fxT||0)>432e5)fxu();try{localStorage.removeItem('shorts-tracker-ai-key')}catch(e){}autoRef();document.addEventListener('visibilitychange',()=>{if(!document.hidden)autoRef()});
+
+$('ch').addEventListener('click',e=>pickDay(e.target));
+$('ch').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pickDay(e.target)}else if(e.key==='ArrowLeft'||e.key==='ArrowRight'){const i=CHD.indexOf(CHS)+(e.key==='ArrowRight'?1:-1);if(i>=0&&i<CHD.length){showDay(CHD[i]);const n=document.querySelectorAll('#ch .cb')[i];n&&n.focus()}}});
+$('wd').addEventListener('click',e=>{const w=e.target.closest('.wc');if(w)showWd(+w.dataset.i)});
+$('hm').addEventListener('click',e=>{const h=e.target.closest('.hc');if(h&&h.dataset.k)showHm(h.dataset.k)});
+$('cum').addEventListener('click',e=>{if(!CUMD)return;const r=$('cum').getBoundingClientRect();if(!r.width)return;const x=(e.clientX-r.left)/r.width*600,i=Math.round((x-10)/580*(CUMD.N-1));cumMark(Math.max(0,Math.min(CUMD.N-1,i)))});
+$('hbars').addEventListener('click',e=>{if(!HK.length||$('hbars').classList.contains('empty'))return;const r=$('hbars').getBoundingClientRect();const i=Math.max(0,Math.min(HK.length-1,Math.floor((e.clientX-r.left)/r.width*HK.length)));showHero(HK[i])});
 </script></body></html>
