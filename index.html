@@ -49,7 +49,7 @@ label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:800;
 svg.cum{width:100%;height:auto}.ax{stroke:var(--line);stroke-width:2}.l1{fill:none;stroke:var(--acc);stroke-width:3;stroke-linejoin:round}
 .l2{stroke:var(--mut);stroke-width:2;stroke-dasharray:6 5}.sv{fill:var(--mut);font:600 12px Manrope,sans-serif}.dot{fill:var(--red)}
 .chart{display:flex;align-items:flex-end;gap:5px;height:100px;overflow-x:auto}
-.chart .cb{flex:1;min-width:14px;height:100%;display:flex;align-items:flex-end;cursor:pointer;-webkit-tap-highlight-color:transparent;border-radius:6px;outline:0}.chart .cb b{display:block;width:100%;background:var(--acc);border-radius:4px 4px 0 0;min-height:2px;transition:height .8s cubic-bezier(.2,.8,.2,1),background .15s,opacity .15s}.chart.has .cb:not(.sel) b{opacity:.55}.chart .cb.sel b{background:var(--red);opacity:1}.chart .cb:focus-visible{box-shadow:0 0 0 2px var(--acc)}.chax{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mut);margin-top:-2px}.dro{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;justify-content:space-between;background:var(--srf2,var(--bg));border-radius:14px;padding:10px 14px;margin-top:2px;min-height:44px}.dro[hidden]{display:none}.dro .cd{font-weight:700;font-size:13px;color:var(--mut);display:inline-block}.dro .cd::first-letter{text-transform:uppercase}.dro .cv{font-weight:800;font-size:20px}.dro .cv small{font-size:12px;font-weight:600;color:var(--mut);margin-left:4px}.dro .cs{font-size:12.5px;color:var(--mut)}.dro .hint{font-size:12.5px;color:var(--mut)}.rtc .dro{background:color-mix(in srgb,var(--accInk) 14%,transparent);color:inherit}.rtc .dro .cd,.rtc .dro .cs,.rtc .dro .cv small,.rtc .dro .hint{color:inherit;opacity:.85}.hbars:not(.empty){cursor:pointer}.rtc .hbars.has i:not(.sel){opacity:.5}.rtc .hbars.has i.sel{opacity:1}svg.cum{cursor:pointer}.mk{stroke:var(--red);stroke-width:2;fill:none}.mkd{fill:var(--red);stroke:var(--card);stroke-width:2}.mkp{fill:var(--card);stroke:var(--mut);stroke-width:2}.hm .hc{cursor:pointer}.hm .hc.sel{opacity:1!important;background:var(--red)!important;outline:2px solid var(--red);outline-offset:1px}
+.chart .cb{flex:1;min-width:14px;height:100%;display:flex;align-items:flex-end;cursor:pointer;-webkit-tap-highlight-color:transparent;border-radius:6px;outline:0}.chart .cb b{display:block;width:100%;background:var(--acc);border-radius:4px 4px 0 0;min-height:2px;transition:height .8s cubic-bezier(.2,.8,.2,1),background .15s,opacity .15s}.chart.has .cb:not(.sel) b{opacity:.55}.chart .cb.sel b{background:var(--red);opacity:1}.chart .cb:focus-visible{box-shadow:0 0 0 2px var(--acc)}.chax{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mut);margin-top:-2px}.dro{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;align-content:flex-start;justify-content:space-between;min-height:112px;background:var(--srf2,var(--bg));border-radius:14px;padding:10px 14px;margin-top:2px}.dro[hidden]{display:none}.dro .cd{font-weight:700;font-size:13px;color:var(--mut);display:inline-block}.dro .cd::first-letter{text-transform:uppercase}.dro .cv{font-weight:800;font-size:20px}.dro .cv small{font-size:12px;font-weight:600;color:var(--mut);margin-left:4px}.dro .cs{font-size:12.5px;color:var(--mut);flex-basis:100%;line-height:1.35}.dro .hint{font-size:12.5px;color:var(--mut)}.rtc .dro{background:color-mix(in srgb,var(--accInk) 14%,transparent);color:inherit}.rtc .dro .cd,.rtc .dro .cs,.rtc .dro .cv small,.rtc .dro .hint{color:inherit;opacity:.85}.hbars:not(.empty){cursor:pointer}.rtc .hbars.has i:not(.sel){opacity:.5}.rtc .hbars.has i.sel{opacity:1}svg.cum{cursor:pointer}.mk{stroke:var(--red);stroke-width:2;fill:none}.mkd{fill:var(--red);stroke:var(--card);stroke-width:2}.mkp{fill:var(--card);stroke:var(--mut);stroke-width:2}.hm .hc{cursor:pointer}.hm .hc.sel{opacity:1!important;background:var(--red)!important;outline:2px solid var(--red);outline-offset:1px}
 .wd{display:flex;align-items:stretch;gap:8px;height:130px;overflow:hidden}.wc{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;-webkit-tap-highlight-color:transparent}.wbw{flex:1;min-height:0;width:100%;display:flex;align-items:flex-end}.wc.sel .wb{opacity:1}.wc.sel span{color:var(--ink);font-weight:800}
 .wb{width:100%;background:var(--acc);opacity:.55;border-radius:6px 6px 0 0;transition:height .8s}.wc.top .wb{opacity:1;background:var(--red)}
 .hm{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;grid-auto-columns:1fr;gap:4px}.hc{aspect-ratio:1;border-radius:4px;min-width:10px}
@@ -118,7 +118,7 @@ html,body{height:100%;overflow:hidden}
 .bg i:nth-child(2){background:radial-gradient(closest-side,var(--w2),transparent)}
 .bg i:nth-child(3){background:radial-gradient(closest-side,var(--w3),transparent)}
 .card{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}.grid .card:hover{transform:none}main>*{animation:none}
-.lite .bg{display:none}.lite .card{-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;background:color-mix(in srgb,var(--ink) 5%,var(--bg))}.lite *{animation:none!important;transition:none!important}
+.lite .bg{display:none}.lite .card{-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;background:color-mix(in srgb,var(--ink) 5%,var(--bg))}.lite *{animation:none!important;transition-duration:.14s!important;transition-delay:0s!important}
 select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:8px 12px;min-height:40px;width:100%}
 .app{display:flex;flex-direction:column;height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-width:1100px;margin:0 auto}
 .app>.top{padding:10px 14px 4px}.app>.note{margin:4px 14px}
@@ -207,7 +207,7 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;border:0;back
 
 
 .h72{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin-top:10px;padding:8px 12px;border-radius:14px;background:color-mix(in srgb,var(--accInk) 14%,transparent)}.h72 .l{font-size:12px;font-weight:700;opacity:.85;width:100%}.h72 .v{font-size:22px;font-weight:800}.h72 .c{font-size:12.5px;opacity:.85}
-.hbars.hr{gap:1.5px;height:104px}.hbars.hr i{border-radius:2px 2px 1px 1px;min-width:0;min-height:2px}.hax{display:flex;justify-content:space-between;font-size:11px;font-weight:700;opacity:.85;margin-top:-2px}
+.hbars.hr{gap:3px;height:104px}.hbars.hr i{border-radius:3px 3px 1px 1px;min-width:0;min-height:2px}.hax{display:flex;justify-content:space-between;font-size:11px;font-weight:700;opacity:.85;margin-top:-2px}
 
 @keyframes fxDrift{0%{transform:translate3d(-4%,-3%,0) rotate(0deg) scale(1)}50%{transform:translate3d(5%,4%,0) rotate(9deg) scale(1.14)}100%{transform:translate3d(-4%,-3%,0) rotate(0deg) scale(1)}}
 @keyframes fxPan{from{transform:translate3d(0,0,0)}to{transform:translate3d(-68.75%,0,0)}}
@@ -219,43 +219,78 @@ input[type=checkbox]{width:20px;height:20px;min-height:0;padding:0;border:0;back
 @keyframes fxRot{to{transform:rotate(360deg)}}
 @keyframes fxStripe{to{transform:translate3d(28px,0,0)}}
 @keyframes fxHue{from{filter:hue-rotate(-60deg)}to{filter:hue-rotate(60deg)}}
-html.fxon{background:var(--bg)}
-html.fxon body{background:transparent}
-html.fxon body::before{content:"";position:fixed;inset:-25%;z-index:-1;pointer-events:none;will-change:transform;background:radial-gradient(38% 32% at 20% 18%,color-mix(in srgb,var(--acc) 42%,transparent),transparent 70%),radial-gradient(34% 30% at 84% 26%,color-mix(in srgb,#ff6bd6 30%,transparent),transparent 70%),radial-gradient(40% 34% at 62% 86%,color-mix(in srgb,#5b8cff 34%,transparent),transparent 70%),radial-gradient(30% 26% at 10% 80%,color-mix(in srgb,var(--yel,#ffd23f) 24%,transparent),transparent 70%);animation:fxDrift 50s ease-in-out infinite!important}
-html.fxon.fxlow body::before{animation:none!important;will-change:auto}
-html.fxon .card{-webkit-backdrop-filter:none;backdrop-filter:none;background:color-mix(in srgb,var(--card) 84%,transparent)}
-html.fxon .rtc{position:relative;overflow:hidden;isolation:isolate;background:color-mix(in srgb,var(--acc) 80%,#ff5fd2);box-shadow:0 20px 46px -16px color-mix(in srgb,var(--acc) 75%,#ff5fd2)}
-html.fxon .rtc::before{content:"";position:absolute;top:0;bottom:0;left:0;width:320%;z-index:-1;pointer-events:none;will-change:transform;background:linear-gradient(115deg,color-mix(in srgb,var(--acc) 94%,#000),color-mix(in srgb,var(--acc) 68%,#ff5fd2),color-mix(in srgb,var(--acc) 70%,#5b8cff),color-mix(in srgb,var(--acc) 78%,#ffd23f),color-mix(in srgb,var(--acc) 94%,#000));animation:fxPan 40s ease-in-out infinite alternate!important}
-html.fxon .rtc::after{content:"";position:absolute;top:-25%;bottom:-25%;left:0;width:34%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:translate3d(-140%,0,0) skewX(-18deg);animation:fxSheen 22s ease-in-out infinite!important;pointer-events:none}
-html.fxon .hero{position:relative;overflow:hidden;isolation:isolate}
-html.fxon .hero::before{content:"";position:absolute;left:50%;top:50%;width:1000px;height:1000px;margin:-500px 0 0 -500px;z-index:-2;pointer-events:none;will-change:transform;background:conic-gradient(transparent 0 52%,var(--acc),#ff6bd6,#5b8cff,transparent 96%);animation:fxRot 16s linear infinite!important}
-html.fxon .hero::after{content:"";position:absolute;inset:1.5px;border-radius:inherit;z-index:-1;pointer-events:none;background:linear-gradient(var(--card),var(--card)),var(--bg)}
-html.fxon.fxlow .hero::before{animation-duration:26s!important}
-html.fxon .bar i{position:relative;overflow:hidden;isolation:isolate;background:var(--acc)}
-html.fxon .bar i::before{content:"";position:absolute;top:0;bottom:0;left:0;width:200%;z-index:-1;pointer-events:none;background:linear-gradient(90deg,var(--acc),#ff6bd6,#5b8cff,var(--acc),#ff6bd6,#5b8cff,var(--acc));animation:fxPan2 16s linear infinite!important}
-html.fxon .bar i::after{content:"";position:absolute;top:0;bottom:0;left:-28px;right:0;pointer-events:none;background:repeating-linear-gradient(110deg,transparent 0 10px,rgba(255,255,255,.24) 10px 20px);background-size:28px 100%;animation:fxStripe 2.4s linear infinite!important}
-html.fxon button:not(.ghost):not(.tab):not(.chb){position:relative;overflow:hidden;isolation:isolate}
-html.fxon button:not(.ghost):not(.tab):not(.chb)::after{content:"";position:absolute;top:-30%;bottom:-30%;left:0;width:40%;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:translate3d(-140%,0,0) skewX(-18deg);animation:fxBtn 18s ease-in-out infinite!important}
-html.fxon .tab.on .ti{box-shadow:0 0 14px -3px var(--acc)}
-html.fxon h1{background:linear-gradient(100deg,var(--ink) 0 28%,var(--acc) 46%,#ff6bd6 58%,var(--ink) 76% 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;will-change:filter;animation:fxHue 18s ease-in-out infinite alternate!important}
-html.fxon .pg>.card,html.fxon .pg>.r2,html.fxon .pg>.chrow{animation:fxUp .75s cubic-bezier(.2,.8,.2,1) both!important}
-html.fxon .pg>:nth-child(2){animation-delay:.07s!important}html.fxon .pg>:nth-child(3){animation-delay:.14s!important}html.fxon .pg>:nth-child(4){animation-delay:.21s!important}html.fxon .pg>:nth-child(5){animation-delay:.28s!important}html.fxon .pg>:nth-child(6){animation-delay:.35s!important}html.fxon .pg>:nth-child(n+7){animation-delay:.42s!important}
-html.fxon .hbars i{transform-origin:bottom;animation:fxGrow .8s cubic-bezier(.2,.8,.2,1) both!important;animation-delay:calc(var(--i,0)*9ms)!important}
-html.fxon .card:active{transform:scale(.985)}
-html.fxon .rf{filter:drop-shadow(0 0 6px var(--acc))}
-html.fxon.fxp *,html.fxon.fxp *::before,html.fxon.fxp *::after{animation-play-state:paused!important}
-html.fxon button:nth-of-type(2n)::after{animation-duration:23s!important;animation-delay:-7s!important}html.fxon button:nth-of-type(3n)::after{animation-duration:29s!important;animation-delay:-13s!important}
+html.fxon:not(.lite){background:var(--bg)}
+html.fxon:not(.lite) body{background:transparent}
+html.fxon:not(.lite) body::before{content:"";position:fixed;inset:-25%;z-index:-1;pointer-events:none;will-change:transform;background:radial-gradient(38% 32% at 20% 18%,color-mix(in srgb,var(--acc) 42%,transparent),transparent 70%),radial-gradient(34% 30% at 84% 26%,color-mix(in srgb,#ff6bd6 30%,transparent),transparent 70%),radial-gradient(40% 34% at 62% 86%,color-mix(in srgb,#5b8cff 34%,transparent),transparent 70%),radial-gradient(30% 26% at 10% 80%,color-mix(in srgb,var(--yel,#ffd23f) 24%,transparent),transparent 70%);animation:fxDrift 50s ease-in-out infinite!important}
+html.fxon:not(.lite).fxlow body::before{animation:none!important;will-change:auto}
+html.fxon:not(.lite) .card{-webkit-backdrop-filter:none;backdrop-filter:none;background:color-mix(in srgb,var(--card) 84%,transparent)}
+html.fxon:not(.lite) .rtc{position:relative;overflow:hidden;isolation:isolate;background:color-mix(in srgb,var(--acc) 80%,#ff5fd2);box-shadow:0 20px 46px -16px color-mix(in srgb,var(--acc) 75%,#ff5fd2)}
+html.fxon:not(.lite) .rtc::before{content:"";position:absolute;top:0;bottom:0;left:0;width:320%;z-index:-1;pointer-events:none;will-change:transform;background:linear-gradient(115deg,color-mix(in srgb,var(--acc) 94%,#000),color-mix(in srgb,var(--acc) 68%,#ff5fd2),color-mix(in srgb,var(--acc) 70%,#5b8cff),color-mix(in srgb,var(--acc) 78%,#ffd23f),color-mix(in srgb,var(--acc) 94%,#000));animation:fxPan 40s ease-in-out infinite alternate!important}
+html.fxon:not(.lite) .rtc::after{content:"";position:absolute;top:-25%;bottom:-25%;left:0;width:34%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:translate3d(-140%,0,0) skewX(-18deg);animation:fxSheen 22s ease-in-out infinite!important;pointer-events:none}
+html.fxon:not(.lite) .hero{position:relative;overflow:hidden;isolation:isolate}
+html.fxon:not(.lite) .hero::before{content:"";position:absolute;left:50%;top:50%;width:1000px;height:1000px;margin:-500px 0 0 -500px;z-index:-2;pointer-events:none;will-change:transform;background:conic-gradient(transparent 0 52%,var(--acc),#ff6bd6,#5b8cff,transparent 96%);animation:fxRot 16s linear infinite!important}
+html.fxon:not(.lite) .hero::after{content:"";position:absolute;inset:1.5px;border-radius:inherit;z-index:-1;pointer-events:none;background:linear-gradient(var(--card),var(--card)),var(--bg)}
+html.fxon:not(.lite).fxlow .hero::before{animation-duration:26s!important}
+html.fxon:not(.lite) .bar i{position:relative;overflow:hidden;isolation:isolate;background:var(--acc)}
+html.fxon:not(.lite) .bar i::before{content:"";position:absolute;top:0;bottom:0;left:0;width:200%;z-index:-1;pointer-events:none;background:linear-gradient(90deg,var(--acc),#ff6bd6,#5b8cff,var(--acc),#ff6bd6,#5b8cff,var(--acc));animation:fxPan2 16s linear infinite!important}
+html.fxon:not(.lite) .bar i::after{content:"";position:absolute;top:0;bottom:0;left:-28px;right:0;pointer-events:none;background:repeating-linear-gradient(110deg,transparent 0 10px,rgba(255,255,255,.24) 10px 20px);background-size:28px 100%;animation:fxStripe 2.4s linear infinite!important}
+html.fxon:not(.lite) button:not(.ghost):not(.tab):not(.chb){position:relative;overflow:hidden;isolation:isolate}
+html.fxon:not(.lite) button:not(.ghost):not(.tab):not(.chb)::after{content:"";position:absolute;top:-30%;bottom:-30%;left:0;width:40%;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:translate3d(-140%,0,0) skewX(-18deg);animation:fxBtn 18s ease-in-out infinite!important}
+html.fxon:not(.lite) .tab.on .ti{box-shadow:0 0 14px -3px var(--acc)}
+html.fxon:not(.lite) h1{background:linear-gradient(100deg,var(--ink) 0 28%,var(--acc) 46%,#ff6bd6 58%,var(--ink) 76% 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;will-change:filter;animation:fxHue 18s ease-in-out infinite alternate!important}
+html.fxon:not(.lite) .pg>.card,html.fxon:not(.lite) .pg>.r2,html.fxon:not(.lite) .pg>.chrow{animation:fxUp .75s cubic-bezier(.2,.8,.2,1) both!important}
+html.fxon:not(.lite) .pg>:nth-child(2){animation-delay:.07s!important}html.fxon:not(.lite) .pg>:nth-child(3){animation-delay:.14s!important}html.fxon:not(.lite) .pg>:nth-child(4){animation-delay:.21s!important}html.fxon:not(.lite) .pg>:nth-child(5){animation-delay:.28s!important}html.fxon:not(.lite) .pg>:nth-child(6){animation-delay:.35s!important}html.fxon:not(.lite) .pg>:nth-child(n+7){animation-delay:.42s!important}
+html.fxon:not(.lite) .hbars i{transform-origin:bottom;animation:fxGrow .8s cubic-bezier(.2,.8,.2,1) both!important;animation-delay:calc(var(--i,0)*18ms)!important}
+html.fxon:not(.lite) .card:active{transform:scale(.985)}
+html.fxon:not(.lite) .rf{filter:drop-shadow(0 0 6px var(--acc))}
+html.fxon:not(.lite).fxp *,html.fxon:not(.lite).fxp *::before,html.fxon:not(.lite).fxp *::after{animation-play-state:paused!important}
+html.fxon:not(.lite) button:nth-of-type(2n)::after{animation-duration:23s!important;animation-delay:-7s!important}html.fxon:not(.lite) button:nth-of-type(3n)::after{animation-duration:29s!important;animation-delay:-13s!important}
+.pg{overflow-anchor:none}.dro{contain:layout}
+
+.ringbox svg{overflow:visible}
+html.fxon:not(.lite) .rf{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--acc) 80%,transparent))}
+html,body{overscroll-behavior:none}.pg{overscroll-behavior-y:contain}
+#ptr{position:fixed;top:max(10px,env(safe-area-inset-top));left:50%;transform:translate(-50%,-56px);opacity:0;z-index:9990;display:flex;gap:8px;align-items:center;padding:9px 15px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--ink);font-size:12.5px;font-weight:700;pointer-events:none;box-shadow:0 10px 26px -12px rgba(0,0,0,.6);will-change:transform,opacity}
+#ptr b{display:inline-block;font-size:15px;line-height:1;transition:transform .2s}#ptr.rdy b{transform:rotate(180deg)}
+#ptr.ld b{animation:ptrSpin .8s linear infinite}@keyframes ptrSpin{to{transform:rotate(360deg)}}
+.lvh{margin-left:8px;font-size:11px;font-weight:800;letter-spacing:.04em;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--accInk) 16%,transparent);opacity:.9}
+.lvh[hidden]{display:none}
+/* ---- lite mode: static but pretty ---- */
+html.lite.fxon{background:var(--bg)}
+html.lite.fxon body{background:transparent}
+html.lite.fxon body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60% 38% at 14% 8%,color-mix(in srgb,var(--acc) 30%,transparent),transparent 72%),radial-gradient(50% 34% at 92% 24%,color-mix(in srgb,#ff6bd6 20%,transparent),transparent 72%),radial-gradient(60% 40% at 72% 96%,color-mix(in srgb,#5b8cff 22%,transparent),transparent 72%)}
+html.lite.fxon .card{background:color-mix(in srgb,var(--card) 90%,transparent);-webkit-backdrop-filter:none;backdrop-filter:none}
+html.lite.fxon .rtc{background:linear-gradient(125deg,color-mix(in srgb,var(--acc) 92%,#000),color-mix(in srgb,var(--acc) 66%,#ff5fd2) 42%,color-mix(in srgb,var(--acc) 70%,#5b8cff) 72%,color-mix(in srgb,var(--acc) 80%,#ffd23f));box-shadow:0 14px 30px -14px color-mix(in srgb,var(--acc) 70%,#ff5fd2)}
+html.lite.fxon .hero{border-color:color-mix(in srgb,var(--acc) 50%,var(--line));box-shadow:0 0 0 1px color-mix(in srgb,var(--acc) 22%,transparent) inset,0 10px 26px -16px color-mix(in srgb,var(--acc) 60%,transparent)}
+html.lite.fxon .bar i{background:linear-gradient(90deg,var(--acc),color-mix(in srgb,var(--acc) 50%,#ff6bd6),color-mix(in srgb,var(--acc) 60%,#5b8cff))}
+html.lite.fxon h1{background:linear-gradient(100deg,var(--ink) 0 30%,var(--acc) 52%,#ff6bd6 66%,var(--ink) 84% 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+html.lite.fxon .tab.on .ti{box-shadow:0 0 12px -3px var(--acc)}
+html.lite.fxon button:not(.ghost):not(.tab):not(.chb){background-image:linear-gradient(135deg,rgba(255,255,255,.22),transparent 62%)}
+html.lite.fxon .rf{filter:drop-shadow(0 0 3px color-mix(in srgb,var(--acc) 70%,transparent))}
+/* ---- v6: адаптив и мелкие правки ---- */
+.app{height:calc(100vh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+.sheet{max-height:85vh;max-height:85dvh}
+input,select{min-width:0;max-width:100%}
+@media (pointer:coarse){input:not([type=checkbox]),select{font-size:16px}}
+.toast{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+.hcap{font-size:11.5px;font-weight:700;opacity:.85;margin-bottom:-2px}
+.ait .chips{margin-bottom:10px}.ait p{overflow-wrap:anywhere}.ait li{overflow-wrap:anywhere}.ait ol{margin:6px 0 0;padding-left:20px}
+.tab{min-width:0}.tab .tl{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hbody .big{overflow-wrap:anywhere}
+@media (max-width:359px){.tab{font-size:9.5px;letter-spacing:-.02em}.tabs{padding:6px 2px 2px}.pg{padding:8px 10px 14px}.app>.top{padding:12px 12px 6px}.card{padding:14px}}
+.toast{border-radius:22px;max-height:40vh;overflow:hidden}
+@media (max-height:480px){.app>.top{padding:6px 16px 2px}.app>.top .lab{display:none}.tab{min-height:44px;gap:1px}.tab .ti{height:24px}.tabs{padding:2px 6px 0}.pg{padding-top:6px}}
 </style></head><body>
 <div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
 <canvas id="fx" aria-hidden="true"></canvas><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="app">
 <div class="top"><div><div class="lab" id="lab">ТРЕКЕР</div><h1>Трекер Shorts</h1></div><div class="hb"><button class="ib" id="mode" aria-label="Ночной режим"></button><button class="ib" id="theme" aria-label="Оформление" aria-haspopup="dialog"></button></div><div class="shd" id="shd"></div><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Оформление"><div class="grab"></div><div class="sh-h"><h2>Оформление</h2><button class="ib" id="sx" aria-label="Закрыть">✕</button></div><div class="sub">Режим</div><div class="seg" id="seg"></div><div class="sub">Цветовая тема</div><div class="pal" id="pal"></div></div><div class="sheet" id="csheet" role="dialog" aria-modal="true" aria-label="Каналы"><div class="grab"></div><div class="sh-h"><h2>Текущий канал</h2><button class="ib" id="cx" aria-label="Закрыть">✕</button></div><div id="csl"></div><button class="ghost" id="cnow">Обновить сейчас</button><button class="ghost" id="cmore">Добавить канал</button></div></div>
 <div class="note" id="note" hidden>Браузер не дал сохранить данные, после закрытия вкладки они пропадут. Сделай копию через «Скачать JSON».</div>
-<div id="pager"><section class="pg" id="p0"><div class="chrow"><button class="chb" id="chb" aria-haspopup="dialog" aria-label="Выбрать канал"><span class="cav"><img id="cha" alt="" width="40" height="40" referrerpolicy="no-referrer" hidden></span><span class="chx"><b id="chn">Добавить канал</b><span id="chs"></span></span></button></div><div class="card aic" id="aic"><h2>Обзор и советы</h2><div class="ait" id="ait"></div></div><div class="card quick"><div class="qrow"><input type="text" id="vu" placeholder="Вставь ссылку на Shorts, можно сразу несколько" aria-label="Ссылки на Shorts" autocomplete="off"><button id="vadd">Добавить</button><button class="ghost" id="sync">Синхронизировать</button></div>
+<div id="pager"><section class="pg" id="p0"><div class="chrow"><button class="chb" id="chb" aria-haspopup="dialog" aria-label="Выбрать канал"><span class="cav"><img id="cha" alt="" width="40" height="40" referrerpolicy="no-referrer" hidden></span><span class="chx"><b id="chn">Добавить канал</b><span id="chs"></span></span></button></div><div class="card aic" id="aic"><h2 id="aih">Аналитика от Gemini</h2><div class="ait" id="ait"></div></div><div class="card quick"><div class="qrow"><input type="text" id="vu" placeholder="Вставь ссылку на Shorts, можно сразу несколько" aria-label="Ссылки на Shorts" autocomplete="off"><button id="vadd">Добавить</button><button class="ghost" id="sync">Синхронизировать</button></div>
 <div class="qrow2"><label class="chk"><input type="checkbox" id="vn" checked>Новый ролик: засчитать просмотры</label><span class="sub" id="sst" role="status" aria-live="polite"></span></div></div>
-<div class="r2 a"><div class="card rtc"><div><div class="live"><b></b>Всего просмотров</div><div class="big" id="hv">0</div><div class="sub" id="hvs"></div><div class="h72" id="h72" title="Сегодня и два предыдущих дня"></div></div><div class="hbars hr" id="hbars" role="group" aria-label="Просмотры по часам за 72 часа, нажми или проведи пальцем"></div><div class="hax" id="hax"><span>−72 ч</span><span>−48 ч</span><span>−24 ч</span><span>сейчас</span></div><div class="dro" id="dro0" style="grid-column:1/-1"></div></div>
+<div class="r2 a"><div class="card rtc"><div><div class="live"><b></b>Всего просмотров<span class="lvh" id="lvh" hidden>● LIVE 3 с</span></div><div class="big" id="hv">0</div><div class="sub" id="hvs"></div><div class="h72" id="h72" title="Сегодня и два предыдущих дня"></div></div><div class="hcap">72 часа · 36 столбиков по 2 часа</div><div class="hbars hr" id="hbars" role="group" aria-label="Просмотры за 72 часа: 36 столбиков по 2 часа, нажми или проведи пальцем"></div><div class="hax" id="hax"><span>−72 ч</span><span>−48 ч</span><span>−24 ч</span><span>сейчас</span></div><div class="dro" id="dro0" style="grid-column:1/-1"></div></div>
 <div class="card hero"><div class="ringbox"><svg viewBox="0 0 80 80" width="84" height="84" role="img" aria-label="Роликов сегодня"><circle cx="40" cy="40" r="34" class="rt"/><circle cx="40" cy="40" r="34" class="rf" id="rf"/><text x="40" y="46" text-anchor="middle" class="rtx" id="rtx">0/2</text></svg><div class="sub">роликов сегодня</div></div>
-<div class="hbody"><div class="lab" style="display:flex;align-items:center;gap:8px">УРОВЕНЬ <span id="lvn">1</span><button class="ghost qh" id="xph" type="button" aria-label="Как начисляется XP" aria-expanded="false" aria-controls="xph2">?</button></div><div class="big" id="lvt">Новичок</div><div class="bar"><i id="xf"></i></div><div class="sub" id="xl"></div><div class="help" id="xph2" hidden><b>Как начисляется XP</b><ul><li><b>+6 XP</b> за каждый добавленный ролик.</li><li><b>+0,6 XP</b> за каждые 1 000 просмотров по всем дням в журнале (дробные части складываются, итог округляется вниз).</li></ul><div>Чем выше уровень, тем больше XP нужно до следующего. Уровень N открывается при 15 × (N − 1)² XP:</div><ul><li>2 уровень: с 15 XP</li><li>3 уровень: с 60 XP</li><li>4 уровень: с 135 XP</li><li>5 уровень: с 240 XP</li><li>6 уровень: с 375 XP, дальше по той же формуле</li></ul><div>Звания: 1 Новичок, 2 Монтажёр, 3 Автор, 4 Креатор, 5 Профи, 6 и выше Легенда.</div><div class="sub" id="xpd" style="margin-top:6px"></div></div><div class="chips"><span class="chip" id="st"></span><span class="chip" id="bs"></span></div></div></div></div>
+<div class="hbody"><div class="lab" style="display:flex;align-items:center;gap:8px">УРОВЕНЬ <span id="lvn">1</span><button class="ghost qh" id="xph" type="button" aria-label="Как начисляется XP" aria-expanded="false" aria-controls="xph2">?</button></div><div class="big" id="lvt">Нищий новичок</div><div class="bar"><i id="xf"></i></div><div class="sub" id="xl"></div><div class="help" id="xph2" hidden><b>Как начисляется XP</b><ul><li><b>+6 XP</b> за каждый добавленный ролик.</li><li><b>+0,6 XP</b> за каждые 1 000 просмотров по всем дням в журнале (дробные части складываются, итог округляется вниз).</li></ul><div>Чем выше уровень, тем больше XP нужно до следующего. Уровень N открывается при 15 × (N − 1)² XP:</div><ul><li>2 уровень: с 15 XP</li><li>3 уровень: с 60 XP</li><li>4 уровень: с 135 XP</li><li>5 уровень: с 240 XP</li><li>6 уровень: с 375 XP</li><li>7 уровень: с 540 XP, дальше по той же формуле</li></ul><div>Звания: 1 Нищий новичок, 2 Монтажёр Коля, 3 Перспективный автор, 4 Шортсер Семён, 5 Роман бизнесмен, 6 Данёк Легенда, 7 и выше KinoLuv.</div><div class="sub" id="xpd" style="margin-top:6px"></div></div><div class="chips"><span class="chip" id="st"></span><span class="chip" id="bs"></span></div></div></div></div>
 <div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><div class="lab">ПРОГРЕСС К ЦЕЛИ</div><div class="big" id="pct">0%</div></div><div class="bar"><i id="fill"></i></div><div class="sub" id="pline"></div><div class="sg" id="sg"></div><div id="fc" style="font-size:13px;line-height:1.5"></div></div>
 <div class="grid">
 <div class="card"><div class="lab">РОЛИКОВ</div><div class="big" id="sv">0</div><div class="sub" id="sv2"></div></div>
@@ -276,10 +311,10 @@ html.fxon button:nth-of-type(2n)::after{animation-duration:23s!important;animati
 </section><section class="pg" id="p3"><div class="r2"><div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline"><h2>Награды</h2><span class="sub" id="achn"></span></div><div class="ach" id="ach"></div></div>
 <div class="card"><h2>Призы за ролики</h2><div class="sub" id="pnx"></div><div id="prz"></div><div class="form"><label>Новый приз<input type="text" id="pn" maxlength="60" placeholder="Например, пицца"></label><label>За сколько роликов<input type="number" id="pa" min="1" inputmode="numeric" value="10"></label><button id="padd">Добавить</button></div></div></div>
 </section><section class="pg" id="p4"><div class="card"><h2>Мои цели</h2><div class="sub" id="gsub"></div><div id="goals"></div><div class="form"><label>Название<input type="text" id="gn" maxlength="60" placeholder="Например, ноутбук"></label><label>Цена<input type="number" id="gp" min="0" inputmode="decimal" placeholder="0"></label><label>Дата<input type="date" id="gd"></label><button id="gadd">Добавить цель</button></div><div class="sub">Цена вводится в выбранной сейчас валюте и дальше пересчитывается по курсу. Срок самой дальней цели задаёт нужный темп.</div></div>
-</section><section class="pg" id="p5"><div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Мои каналы</h2><button class="ghost" id="cref">Обновить</button></div><div id="chl"></div><div class="form"><label>Канал: @имя, ссылка или ID<input type="text" id="cq" placeholder="@mychannel" autocomplete="off"></label><label>Ключ API<select id="ck"></select></label><button id="cadd">Добавить канал</button></div><div class="sub" id="cst" role="status" aria-live="polite"></div></div>
+</section><section class="pg" id="p5"><div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Мои каналы</h2><button class="ghost" id="cref">Обновить</button></div><div id="chl"></div><div class="form"><label>Канал: @имя, ссылка или ID<input type="text" id="cq" placeholder="@mychannel" autocomplete="off"></label><label>Ключ API<select id="ck"></select></label><button id="cadd">Добавить канал</button><button class="ghost" id="nettest" type="button">Проверить связь с YouTube</button></div><div class="sub" id="cst" role="status" aria-live="polite"></div></div>
 <div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h2>API-ключи</h2><button class="ghost qh" id="khelp" aria-label="Где взять ключ API" aria-expanded="false">?</button></div><div class="help" id="kh" hidden><ol><li>Открой <a href="https://console.cloud.google.com/" target="_blank" rel="noopener noreferrer">Google Cloud Console</a> и войди в аккаунт Google.</li><li>Создай проект: выбор проекта вверху, затем «Новый проект».</li><li>«APIs &amp; Services» → «Library», найди «YouTube Data API v3» и нажми «Enable».</li><li>«Credentials» → «Create credentials» → «API key».</li><li>Скопируй ключ (он начинается с AIza) и вставь сюда. Лучше ограничить его: «Restrict key» → только YouTube Data API v3.</li></ol><div class="sub">Бесплатной квоты 10 000 единиц в день хватает: проверка канала стоит 1 единицу.</div></div><div id="kl"></div><div class="form"><label>Название<input type="text" id="kn" maxlength="30" placeholder="Основной"></label><label>YouTube Data API ключ<input type="password" id="key" autocomplete="off" placeholder="AIza..."></label><button id="kadd">Сохранить ключ</button></div><div class="sub">Ключи хранятся только в этом браузере и не блокируются. В резервную копию не попадают. Для каждого канала можно выбрать свой ключ.</div></div>
 </section><section class="pg" id="p6"><div class="card"><h2>Валюта и доход</h2><div class="form"><label>Валюта<select id="cur"><option value="RUB">₽ Рубли</option><option value="USD">$ Доллары</option><option value="KZT">₸ Тенге</option></select></label><label>CPM за 1000 просмотров<input type="number" id="cpm" step="any" min="0" inputmode="decimal"></label><label>Валюта CPM<select id="cpmcur"><option value="RUB">₽ Рубли</option><option value="USD">$ Доллары</option><option value="KZT">₸ Тенге</option></select></label><label>Роликов в день (план)<input type="number" id="daily" min="1" inputmode="numeric"></label></div><label class="chk"><input type="checkbox" id="auto">Обновлять курс автоматически</label><div class="form"><label>₽ за 1 $<input type="number" id="fr" step="0.01" min="0.01"></label><label>₸ за 1 $<input type="number" id="fk" step="0.01" min="0.01"></label><button class="ghost" id="fxb">Обновить курс</button></div><div class="sub" id="fxs"></div></div>
-<div class="card"><h2>Производительность</h2><label class="chk"><input type="checkbox" id="shine" checked>Эффекты и переливы</label><label class="chk"><input type="checkbox" id="lite">Лёгкий режим для слабых устройств: без теней и анимаций</label><div class="sub">Тема и ночной режим переключаются кнопками в шапке.</div></div>
+<div class="card"><h2>Производительность</h2><label class="chk"><input type="checkbox" id="livechk" checked>Обновлять просмотры каждые 3 секунды (пока приложение открыто)</label><label class="chk"><input type="checkbox" id="shine" checked>Эффекты и переливы</label><label class="chk"><input type="checkbox" id="lite">Лёгкий режим для слабых устройств: без теней и анимаций</label><div class="sub">Тема и ночной режим переключаются кнопками в шапке.</div></div>
 <details class="card"><summary>Разбор цифр</summary><div class="sub">Темп, нужный темп и лучший день недели.</div><div><button id="ask">Разобрать мои цифры</button></div><pre id="ans"></pre></details>
 <details class="card"><summary>Резервная копия</summary><div class="sub">Данные хранятся в этом браузере. API-ключ в копию не попадает.</div><div class="form"><button id="exp">Скачать JSON</button><label>Восстановить из файла<input type="file" id="imp" accept="application/json,.json"></label></div></details>
 </section></div><nav class="tabs" id="tabs" role="tablist"></nav></div>
@@ -290,7 +325,7 @@ const fmt=n=>Math.round(n).toLocaleString('ru-RU');
 let CHS=null,CHC=null,CHD=[],HK=[],HS=null,HM=null,WDS=-2,WDD=null,CUMD=null,CUMI=-1;const WDF=['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
 const pl=(n,a,b,c)=>{n=Math.abs(n)%100;const m=n%10;return n>10&&n<20?c:m>1&&m<5?b:m==1?a:c};
 const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
-const LV=['Новичок','Монтажёр','Автор','Креатор','Профи','Легенда'],WD=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
+const LV=['Нищий новичок','Монтажёр Коля','Перспективный автор','Шортсер Семён','Роман бизнесмен','Данёк Легенда','KinoLuv'],WD=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
 const SYM={RUB:'₽',USD:'$',KZT:'₸'},cpmShown=()=>S.cpmV!=null?S.cpmV:S.cpm,cpmUsd=()=>{const f=S.fx&&S.fx[S.cpmC];return S.cpmV!=null&&f>0?S.cpmV/f:S.cpm},cpmTxt=()=>(+(+cpmShown()).toFixed(8)).toString().replace('.',',')+' '+SYM[S.cpmC],M=n=>fmt(n)+' '+SYM[S.cur],ab=n=>n>=1e6?n/1e6+'M':n>=1e3?n/1e3+'K':n+'';
 const TH=[['gemini','Gemini','#F4F7FE','#4B7BEC','#0B0E17','#8AB4F8'],['youtube','YouTube','#F9F9F9','#FF0000','#0F0F0F','#FF2D2D'],['gpt','GPT','#F7F7F8','#10A37F','#171717','#19C37D'],['claude','Claude','#FAF9F5','#C96442','#1F1E1D','#D97757']],MODES=[['auto','Авто'],['light','День'],['dark','Ночь']],DQ=matchMedia('(prefers-color-scheme:dark)');
 const sv=p=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>';
@@ -342,10 +377,10 @@ function renderHero(c){
  if(c.perK>0&&cu>0)ex.push('≈ '+M(cu/1000*c.perK));
  $('h72').innerHTML='<span class="l">За 72 часа · сегодня и 2 предыдущих дня</span><span class="v">'+fmt(cu)+'</span><span class="c">'+ex.join(' · ')+'</span>'}
 $('hvs').textContent='≈ '+M(c.rub)+' заработано · '+(nv?(nv%10===1&&nv%100!==11?'с '+fmt(nv)+' добавленного ролика':'со всех '+fmt(nv)+' добавленных роликов'):c.v?fmt(c.v)+' '+pl(c.v,'ролик','ролика','роликов'):'роликов пока нет');
- const vals=[],hk=[];CHC=c;{const nw=new Date();nw.setMinutes(0,0,0);for(let i=71;i>=0;i--){const k=hkey(new Date(nw.getTime()-i*36e5));hk.push(k);vals.push(Math.round((S.hrs&&S.hrs[k])||0))}}
+ const vals=[],hk=[];CHC=c;{const nw=new Date();nw.setMinutes(0,0,0);nw.setHours(Math.floor(nw.getHours()/2)*2);for(let i=35;i>=0;i--){const d=new Date(nw.getTime()-i*72e5),k=hkey(d);hk.push(k);vals.push(Math.round(h2(d)))}}
  const mx=Math.max(1,...vals),any=vals.some(x=>x>0),b=$('hbars');
- if(b.children.length!==72)b.innerHTML=vals.map(()=>'<i></i>').join('');b.classList.toggle('empty',!any);
- [...b.children].forEach((e,i)=>{e.style.height=(any?Math.max(3,vals[i]/mx*100):18+Math.round(Math.sin(i*.45)*10+Math.cos(i*.2)*8))+'%';e.style.setProperty('--i',i);e.title=hk[i].slice(11)+':00 · '+fmt(vals[i])+' просмотров'});
+ if(b.children.length!==36)b.innerHTML=vals.map(()=>'<i></i>').join('');b.classList.toggle('empty',!any);
+ [...b.children].forEach((e,i)=>{e.style.height=(any?Math.max(3,vals[i]/mx*100):18+Math.round(Math.sin(i*.45)*10+Math.cos(i*.2)*8))+'%';e.style.setProperty('--i',i);e.title=hk[i].slice(11)+':00–'+String((+hk[i].slice(11)+2)%24).padStart(2,'0')+':00 · '+fmt(vals[i])+' просмотров'});
  HK=hk;if(!HK.includes(HS))HS=HK[HK.length-1];b.classList.toggle('has',any);$('dro0').hidden=false;
  if(any)showHero(HS);else{HS=null;$('dro0').innerHTML='<span class="hint">Почасовой график заполняется при каждой синхронизации: открывай приложение с ключом API на вкладке «Каналы», и просмотры начнут копиться по часам.</span>'}
  const sg=$('sg');sg.innerHTML='';let rest=c.rub;
@@ -378,7 +413,9 @@ function dayHtml(k){const c=CHC||{},d=new Date(k+'T00:00:00');
 function showDay(k){$('dro1').innerHTML=dayHtml(k);document.querySelectorAll('#ch .cb').forEach(b=>b.classList.toggle('sel',b.dataset.k===k));CHS=k}
 function pickDay(t){const b=t.closest&&t.closest('.cb');if(b)showDay(b.dataset.k)}
 const hkey=d=>iso(d)+'T'+String(d.getHours()).padStart(2,'0');
-function hourHtml(k){const d=new Date(k.slice(0,10)+'T'+k.slice(11)+':00:00'),h=d.getHours(),e=(h+1)%24,p=n=>String(n).padStart(2,'0'),v=Math.round((S.hrs&&S.hrs[k])||0),tot=HK.reduce((q,x)=>q+((S.hrs&&S.hrs[x])||0),0);
+const h2=d=>{const a=(S.hrs&&S.hrs[hkey(d)])||0,n=new Date(d.getTime()+36e5);return a+((S.hrs&&S.hrs[hkey(n)])||0)};
+const pk=k=>new Date(k.slice(0,10)+'T'+k.slice(11)+':00:00');
+function hourHtml(k){const d=pk(k),h=d.getHours(),e=(h+2)%24,p=n=>String(n).padStart(2,'0'),v=Math.round(h2(d)),tot=HK.reduce((q,x)=>q+h2(pk(x)),0);
  const dt=d.toLocaleDateString('ru-RU',{weekday:'long',day:'numeric',month:'long'});
  return'<span class="cd">'+dt+', '+p(h)+':00–'+p(e)+':00</span><span class="cv">'+fmt(v)+'<small>просмотров</small></span>'+(tot>0?'<span class="cs">'+(v>0&&v/tot<.005?'<1':Math.round(v/tot*100))+'% от просмотров за 72 часа</span>':'')}
 function addHours(delta){const now=Date.now(),prev=+S.lsync||0;S.hrs=S.hrs||{};
@@ -435,11 +472,11 @@ function renderCh(){const g=$('chl');g.innerHTML='';if(!S.channels.length)g.appe
  const ks=KL(),sel=$('ck'),kl=$('kl');sel.innerHTML='';kl.innerHTML='';
  ks.forEach(k=>{const o=el('option',null,k.label);o.value=k.id;sel.append(o);const r=el('div','row');r.append(el('span',null,k.label+' · '+k.key.slice(0,4)+'…'+k.key.slice(-3)));const b=el('button','ghost','×');b.setAttribute('aria-label','Удалить ключ '+k.label);b.onclick=()=>{KW(KL().filter(z=>z.id!==k.id));render()};r.append(b);kl.append(r)});
  try{if((localStorage.getItem(KEYAPI)||'')[0]==='{')CS('Старый ключ был зашифрован паролем. Добавь его заново: теперь он сохранится без блокировки.')}catch(e){}}
-function renderSet(){[['cpm',cpmShown(),8],['daily',S.daily],['fr',S.fx.RUB],['fk',S.fx.KZT]].forEach(([i,v,d=2])=>{if(document.activeElement!==$(i))$(i).value=+(+v).toFixed(d)});if(document.activeElement!==$('cpmcur'))$('cpmcur').value=S.cpmC;$('cur').value=S.cur;$('auto').checked=!!S.auto;$('lite').checked=!!S.lite;$('shine').checked=S.shine!==false;
+function renderSet(){[['cpm',cpmShown(),8],['daily',S.daily],['fr',S.fx.RUB],['fk',S.fx.KZT]].forEach(([i,v,d=2])=>{if(document.activeElement!==$(i))$(i).value=+(+v).toFixed(d)});if(document.activeElement!==$('cpmcur'))$('cpmcur').value=S.cpmC;$('cur').value=S.cur;$('auto').checked=!!S.auto;$('lite').checked=!!S.lite;$('livechk').checked=S.live!==false;$('shine').checked=S.shine!==false;
  $('fxs').textContent='1 $ = '+(+S.fx.RUB).toFixed(2)+' ₽ = '+(+S.fx.KZT).toFixed(2)+' ₸'+(S.auto&&S.fxT?' · обновлено '+new Date(S.fxT).toLocaleString('ru-RU'):' · курс вручную');
  applyTheme()}
 let AR=[],PI=-1;const DR=new Set(),PR={1:c=>{renderCum(c);renderCharts(c)},2:c=>{renderDays(c);renderVideos()},3:c=>{renderAch(c);renderPrizes(c)},4:renderGoals,5:renderCh,6:renderSet};
-function render(){const c=calc();renderTop(c);renderKpi(c);renderChip();renderAI(c);AR=A.map(a=>a[3](c));const fr=[];A.forEach((a,i)=>{if(AR[i]&&ready&&!S.seen[a[0]]){S.seen[a[0]]=1;fr.push(a[2])}});if(fr.length){boom();toast('Новая награда: '+fr.join(', '));save()}
+function render(){const c=calc();renderTop(c);renderKpi(c);renderChip();renderAI(c);AR=A.map(a=>a[3](c));const fr=[];A.forEach((a,i)=>{if(AR[i]&&ready&&!S.seen[a[0]]){S.seen[a[0]]=1;fr.push(a[2])}});if(fr.length){boom();toast(fr.length>2?'Новые награды ('+fr.length+'): '+fr.slice(0,2).join(', ')+' и ещё '+(fr.length-2):'Новая награда: '+fr.join(', '));save()}
  for(const k in PR){if(+k===PI)PR[k](c);else DR.add(+k)}pre(c)}
 $('d').value=iso(new Date());
 $('add').onclick=()=>{const d=$('d').value;if(!d)return;S.log[d]={v:Math.max(0,+$('v').value||0),w:Math.max(0,+$('w').value||0)};$('w').value='';save();render();if(+S.log[d].v>0&&!RM)boom()};
@@ -451,10 +488,11 @@ const ctp=()=>document.documentElement.classList.remove('sh-open','ch-open');
 $('theme').onclick=()=>document.documentElement.classList.add('sh-open');$('shd').onclick=ctp;$('sx').onclick=ctp;
 $('mode').onclick=()=>{S.mode=document.documentElement.dataset.mode==='dark'?'light':'dark';applyTheme();save()};
 const YT='https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&maxResults=50&id=';
+async function nf(u){try{return await fetch(u)}catch(e){throw new Error('нет связи с YouTube (Failed to fetch). Проверь интернет, выключи VPN или блокировщик рекламы и открой файл прямо в Chrome.')}}
 const KS='shorts-tracker-keys-v4',KL=()=>{try{return JSON.parse(localStorage.getItem(KS))||[]}catch(e){return[]}},KW=a=>{try{localStorage.setItem(KS,JSON.stringify(a));return 1}catch(e){CS('Браузер не дал сохранить ключ.',1)}},kv=id=>{const a=KL();return(a.find(k=>k.id===id)||a[0]||{}).key};
 const CS=(m,e)=>{const n=$('cst');n.textContent=m;n.style.color=e?'var(--red)':'var(--ink)'};
 const pq=t=>{t=t.trim();const m=t.match(/youtube\.com\/(?:channel\/(UC[\w-]{22})|(@[^\/?#\s]+))/i);return m?m[1]||decodeURIComponent(m[2]):t};
-async function chq(q,key){const p=/^UC[\w-]{22}$/.test(q)?'id='+q:'forHandle='+encodeURIComponent(q[0]==='@'?q:'@'+q),r=await fetch('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&'+p+'&key='+encodeURIComponent(key)),d=await r.json();if(d.error)throw new Error(d.error.message);const i=(d.items||[])[0];if(!i)throw new Error('Канал не найден. Проверь @имя или ID.');const t=i.snippet.thumbnails||{},a=(t.medium||t.default||{}).url||'';return{cid:i.id,title:i.snippet.title,handle:i.snippet.customUrl||'',avatar:a.indexOf('https://')===0?a:'',subs:i.statistics.hiddenSubscriberCount?null:+i.statistics.subscriberCount,views:+i.statistics.viewCount||0,videos:+i.statistics.videoCount||0,t:Date.now()}}
+async function chq(q,key){const p=/^UC[\w-]{22}$/.test(q)?'id='+q:'forHandle='+encodeURIComponent(q[0]==='@'?q:'@'+q),r=await nf('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&'+p+'&key='+encodeURIComponent(key)),d=await r.json();if(d.error)throw new Error(d.error.message);const i=(d.items||[])[0];if(!i)throw new Error('Канал не найден. Проверь @имя или ID.');const t=i.snippet.thumbnails||{},a=(t.medium||t.default||{}).url||'';return{cid:i.id,title:i.snippet.title,handle:i.snippet.customUrl||'',avatar:a.indexOf('https://')===0?a:'',subs:i.statistics.hiddenSubscriberCount?null:+i.statistics.subscriberCount,views:+i.statistics.viewCount||0,videos:+i.statistics.videoCount||0,t:Date.now()}}
 async function chr(){let n=0;for(const x of S.channels){const key=kv(x.kid);if(!key)continue;try{Object.assign(x,await chq(x.cid,key));n++}catch(e){CS('Ошибка: '+e.message,1)}}save();render();return n}
 $('cref').onclick=async()=>{CS('Обновляю…');const n=await chr();if(n)CS('Обновлено каналов: '+n)};
 $('cadd').onclick=async()=>{const q=pq($('cq').value),kid=$('ck').value,key=kv(kid);if(!q)return CS('Вставь @имя или ссылку на канал.',1);if(!key)return CS('Сначала сохрани API-ключ ниже.',1);CS('Ищу канал…');
@@ -478,23 +516,89 @@ function renderCsl(){const g=$('csl'),a=AC();g.innerHTML='';S.channels.forEach(x
 $('chb').onclick=()=>{if(!S.channels.length)return jump(5);renderCsl();document.documentElement.classList.add('ch-open')};
 $('cx').onclick=ctp;$('cmore').onclick=()=>{ctp();jump(5)};$('cnow').onclick=()=>{ctp();LR=0;autoRef()};
 async function autoRef(){if(Date.now()-LR<12e4)return;LR=Date.now();$('chb').classList.add('ld');try{if(S.videos.length&&kv()&&!$('sync').disabled)await $('sync').onclick();if(S.channels.length)await chr()}catch(e){}finally{$('chb').classList.remove('ld')}}
-function facts(c){const a=AC()||{},ds=(x,y)=>{let t=0;for(let i=x;i<y;i++){const d=new Date(c.t0);d.setDate(d.getDate()-i);const e=S.log[iso(d)];t+=e?+e.w||0:0}return t},l7=ds(0,7)/7,p7=ds(7,14)/7,wd={},wn={};c.ks.forEach(k=>{const g=new Date(k+'T00:00:00').getDay();wd[g]=(wd[g]||0)+(+S.log[k].w||0);wn[g]=(wn[g]||0)+1});let bg=-1,bv=0;for(const g in wd){const m=wd[g]/wn[g];if(m>bv){bv=m;bg=+g}}
- return{ch:a.title||'',subs:a.subs,cv:a.views,cn:a.videos,days:c.ks.length,vids:c.v,views:c.w,l7:Math.round(l7),p7:Math.round(p7),tr:p7>0?+((l7-p7)/p7).toFixed(2):null,bg:bg,bv:Math.round(bv),best:c.bd,plan:S.daily,pct:c.goal>0?+Math.min(1,c.rub/c.goal).toFixed(2):null,streak:c.best}}
-function localAI(f){const o=[],t=[];if(!f.days)return{o:['Данных пока нет: добавь ролики или внеси первые дни, и я разберу статистику.'],t:['Добавь хотя бы 3 ролика, чтобы появилась динамика.','Подключи ключ API на вкладке «Каналы»: просмотры и подписчики будут обновляться сами.']};
- o.push('За '+f.days+' '+pl(f.days,'день','дня','дней')+' учёта: '+f.vids+' '+pl(f.vids,'ролик','ролика','роликов')+' и '+fmt(f.views)+' просмотров, около '+fmt(f.views/f.days)+' в день.');
- if(f.tr!=null)o.push(f.tr>=.1?'Динамика растёт: последние 7 дней на '+Math.round(f.tr*100)+'% выше предыдущих.':f.tr<=-.1?'Просмотры просели на '+Math.round(-f.tr*100)+'% к предыдущей неделе.':'Просмотры держатся примерно на уровне прошлой недели.');
- if(f.subs!=null&&f.cv>0)o.push('На канале '+fmt(f.subs)+' подписчиков при '+fmt(f.cv)+' просмотрах: около '+(f.subs/f.cv*1000).toFixed(1).replace('.',',')+' подписчика на 1000 просмотров.');
- if(f.bg>=0)o.push('Лучше всего заходит контент в '+WDA[f.bg]+': в среднем '+fmt(f.bv)+' просмотров в такой день.');
- if(f.tr!=null&&f.tr<=-.1)t.push('Проверь первые 1-2 секунды последних роликов: если зрители уходят сразу, смени крючок и начинай с самого яркого кадра.');
- if(f.vids/f.days<f.plan)t.push('Ты выкладываешь меньше плана ('+f.plan+' в день): регулярность важнее идеальности, держи темп хотя бы 3-4 ролика в неделю.');
- if(f.bg>=0)t.push('Ставь самые сильные ролики на '+WDA[f.bg]+' и пробуй разное время публикации вокруг этого дня.');
- if(f.subs!=null&&f.cv>0&&f.subs/f.cv*1000<3)t.push('Подписчиков мало на просмотры: добавь призыв подписаться в конце и закреплённый комментарий, делай серии с продолжением.');
- t.push('Повтори формат трёх лучших роликов из Studio, но с новым углом подачи.','Делай концовку, которая зацикливается на начало: это повышает удержание и повторные просмотры.','Раз в неделю смотри удержание в YouTube Studio и вырезай моменты, где зрители уходят.');
- return{o:o,t:t.slice(0,5)}}
-function renderAI(c){const f=facts(c),sig=JSON.stringify(f);if(sig===AIS)return;AIS=sig;const box=$('ait'),r=localAI(f);box.innerHTML='';r.o.forEach(x=>box.append(el('p',null,x)));const u=el('ul');r.t.forEach(x=>u.append(el('li',null,x)));box.append(el('b',null,'Что делать дальше'),u)}
+const ANM={gemini:'Аналитика от Gemini',gpt:'Аналитика от GPT',claude:'Аналитика от Claude',youtube:'Аналитика от YouTube'},WDV=['в воскресенье','в понедельник','во вторник','в среду','в четверг','в пятницу','в субботу'];
+const pc=x=>Math.round(x*100)+'%',dec=x=>x.toFixed(1).replace('.',','),tt=x=>{x=String(x);return x.length>46?x.slice(0,44)+'…':x},dn=n=>{n=Math.max(0,Math.ceil(n));return fmt(n)+' '+pl(n,'день','дня','дней')},rv=n=>fmt(n)+' '+pl(Math.round(n),'ролик','ролика','роликов'),
+ dfut=(c,n)=>{const d=new Date(c.t0.getFullYear(),c.t0.getMonth(),c.t0.getDate()+Math.ceil(n));return d.toLocaleDateString('ru-RU',d.getFullYear()===c.t0.getFullYear()?{day:'numeric',month:'long'}:{day:'numeric',month:'long',year:'numeric'}).replace(/\s*г\.$/,'')},dng=n=>{n=Math.max(0,Math.ceil(n));return fmt(n)+(n%10===1&&n%100!==11?' дня':' дней')};
+function facts(c){const a=AC()||{},W=[],P=[];for(let i=27;i>=0;i--){const e=S.log[iso(new Date(c.t0.getFullYear(),c.t0.getMonth(),c.t0.getDate()-i))];W.push(e?+e.w||0:0);P.push(e?+e.v||0:0)}
+ const sm=(x,i,j)=>x.slice(i,j).reduce((q,y)=>q+y,0),span=c.ks.length?Math.max(1,Math.min(28,Math.round((c.t0-new Date(c.ks[0]+'T00:00:00'))/864e5)+1)):0,l7=sm(W,21,28)/7,p7=sm(W,14,21)/7,n=Math.min(14,span);
+ let sl=null,vol=null;if(n>=5){const y=W.slice(28-n),my=sm(y,0,n)/n,mx=(n-1)/2;let a1=0,a2=0,sd=0;y.forEach((v,i)=>{a1+=(i-mx)*(v-my);a2+=(i-mx)*(i-mx);sd+=(v-my)*(v-my)});sl=a1/a2;vol=my>0?Math.sqrt(sd/n)/my:null}
+ const wd={},wn={};c.ks.forEach(k=>{const g=new Date(k+'T00:00:00').getDay(),w=+S.log[k].w||0;if(w>0){wd[g]=(wd[g]||0)+w;wn[g]=(wn[g]||0)+1}});let bg=-1,bv=0;if(Object.keys(wd).length>1)for(const g in wd){const m=wd[g]/wn[g];if(m>bv){bv=m;bg=+g}}
+ const vs=(S.videos||[]).map(v=>({t:v.title||v.id,w:+v.views||0})).sort((x,y)=>y.w-x.w),vt=vs.reduce((q,v)=>q+v.w,0),med=vs.length?vs[Math.floor((vs.length-1)/2)].w:0,nx=(r,v)=>r.find(x=>x>v)||null,subs=a.subs==null?null:+a.subs;
+ return{th:S.theme,cur:S.cur,subs,cv:+a.views||0,days:c.ks.length,span,vids:c.v,views:c.w,l7,p7,base:span>7?sm(W,28-span,21)/(span-7):null,tr:p7>0?(l7-p7)/p7:null,sl,vol,bg,bv,plan:c.dly,posts7:sm(P,21,28),act7:P.slice(21).filter(x=>x>0).length,top:vs.slice(0,3),nv:vs.length,med,hits:vs.filter(v=>med>0&&v.w>=2*med).length,share:vt>0&&vs.length>1?vs[0].w/vt:null,nextV:nx([1e3,1e4,1e5,1e6,5e6,1e7,5e7,1e8],c.w),nextS:subs==null?null:nx([100,1e3,1e4,1e5,1e6],subs),rub:Math.round(c.rub),goal:Math.round(c.goal),perK:c.perK,rem:c.remViews,need:c.needAll,left:c.left,V0:c.V0,streak:c.streak,xp:c.xp,hi:c.hi,lvl:c.lvl}}
+/* прогноз: среднее за 7 дней + половина тренда, в разумных границах */
+const dayAt=(f,i)=>!(f.l7>0)?0:f.sl==null?f.l7:Math.max(f.l7*.4,Math.min(f.l7*2.5,f.l7+f.sl*.5*i)),proj=(f,n)=>{let s=0;for(let i=1;i<=n;i++)s+=dayAt(f,i);return s},eta=(f,R)=>{if(R<=0)return 0;if(!(f.l7>0))return 1e9;let s=0;for(let i=1;i<=3650;i++){s+=dayAt(f,i);if(s>=R)return i}return 1e9},FAR=3650;
+function aiGemini(f,c){const o=[],t=[],k=[],p7=proj(f,7),p30=proj(f,30);
+ if(f.l7>0){k.push('7 дней: ≈ '+kf(Math.round(p7)),'30 дней: ≈ '+kf(Math.round(p30)));if(f.perK>0)k.push('Месяц: ≈ '+M(p30/1000*f.perK))}
+ if(f.sl!=null&&f.l7>0){const g=f.sl*7/f.l7;o.push(Math.abs(g)<.1?'Тренд за '+dn(Math.min(14,f.span))+' ровный: в среднем '+fmt(f.l7)+' просмотров в день без заметного роста или спада.':g>0?'Тренд растущий: каждый следующий день приносит примерно на '+fmt(f.sl)+' просмотров больше (около +'+pc(Math.min(g,9.99))+' за неделю).':'Тренд нисходящий: каждый следующий день приносит примерно на '+fmt(-f.sl)+' просмотров меньше (около −'+pc(Math.min(-g,1))+' за неделю).')}
+ else o.push(f.l7>0?'Для тренда данных пока мало ('+dn(f.span)+' учёта), поэтому прогноз строю по среднему за неделю: '+fmt(f.l7)+' просмотров в день.':'За последние 7 дней просмотров в журнале нет, прогноз строить не на чем: синхронизируй ролики или внеси дни.');
+ if(f.l7>0)o.push('Прогноз с поправкой на тренд: за ближайшие 7 дней ≈ '+fmt(p7)+' просмотров, за 30 дней ≈ '+fmt(p30)+(f.perK>0?' (≈ '+M(p30/1000*f.perK)+')':'')+'.');
+ if(f.nextV&&f.l7>0){const d=eta(f,f.nextV-f.views);o.push('Следующий рубеж — '+fmt(f.nextV)+' просмотров: осталось '+fmt(f.nextV-f.views)+', жду его '+(d<FAR?'примерно к '+dfut(c,d)+' (через '+dn(d)+')':'не скоро: при таком темпе это больше 10 лет')+'.')}
+ let dg=null;if(f.goal>0&&f.rem<=0)o.push('Деньги на все цели уже набраны: можно ставить следующую.');
+ else if(f.goal>0&&f.l7>0){dg=eta(f,f.rem);o.push('Деньги на цели ('+M(f.goal)+') при таком ходе наберутся '+(dg<FAR?'к '+dfut(c,dg)+(!f.left?'':dg<f.left?' — на '+dn(f.left-dg)+' раньше срока':dg>f.left?' — на '+dn(dg-f.left)+' позже срока':' — ровно к сроку'):'не скоро: темп слишком мал')+'.')}
+ if(f.nextS&&f.subs>0&&f.cv>0&&f.l7>0){const r=f.subs/f.cv,d=(f.nextS-f.subs)/(r*f.l7);o.push('Подписчики (оценка): при конверсии '+dec(r*1000)+' на 1000 просмотров рубеж '+fmt(f.nextS)+' — '+(d<FAR?'примерно к '+dfut(c,d):'не скоро')+'.')}
+ if(f.vids>0&&f.l7>0){const av=f.views/f.vids;t.push(dg!=null&&dg<FAR?'Сценарий «+1 ролик в день»: при средних '+fmt(av)+' просмотрах на ролик темп вырастет до ≈ '+fmt(f.l7+av)+' в день, и цель наберётся за '+dn(eta(Object.assign({},f,{l7:f.l7+av}),f.rem))+' вместо '+dng(dg)+'.':'Сценарий «+1 ролик в день»: при средних '+fmt(av)+' просмотрах на ролик это ≈ +'+fmt(av*30)+' просмотров в месяц.')}
+ if(f.left&&f.rem>0&&f.l7>0&&f.rem/f.left>f.l7)t.push('Чтобы успеть к сроку, средний день должен давать '+fmt(f.rem/f.left)+' просмотров — это в '+dec(f.rem/f.left/f.l7)+' раза больше текущего.');
+ {const xd=f.posts7/7*6+f.l7*6/1e4;if(xd>0)t.push('До уровня '+(f.lvl+1)+' («'+LV[Math.min(f.lvl,LV.length-1)]+'») осталось '+fmt(f.hi-f.xp)+' XP: при текущем темпе это примерно '+dn((f.hi-f.xp)/xd)+'.')}
+ if(f.bg>=0)t.push('По дням недели сильнее всего ролики заходят '+WDV[f.bg]+' (в среднем '+fmt(f.bv)+'): главный ролик недели ставь на этот день.');
+ if(f.vol!=null&&f.vol>=.6)t.push('Разброс по дням большой (около '+pc(f.vol)+' от среднего), поэтому факт может заметно отличаться от прогноза в обе стороны.');
+ if(f.span<14)t.push('Прогноз станет точнее после 14 дней учёта: сейчас в журнале '+dn(f.span)+'.');
+ if(t.length<2)t.push('Синхронизируй ролики каждый день: чем ровнее ряд данных, тем точнее прогноз.');
+ return{k,o,h:'Сценарии и ориентиры',t}}
+function aiGpt(f,c){const o=[],t=[],k=[],need=f.left&&f.rem>0?f.rem/f.left:0,tg=f.plan*7,top=f.top[0];let lv;
+ if(f.posts7<tg)lv=['регулярность','За последние 7 дней вышло '+f.posts7+' из '+tg+' роликов по плану. Пока план не закрыт, остальные улучшения дают меньше.'];
+ else if(f.tr!=null&&f.tr<=-.1)lv=['удержание','План по роликам выполнен, но просмотры упали на '+pc(-f.tr)+' к прошлой неделе: дело не в количестве, а в том, как ролики цепляют.'];
+ else if(f.share!=null&&f.share>=.5)lv=['повторить хит','«'+tt(top.t)+'» даёт '+pc(f.share)+' всех просмотров: это готовая формула, которую стоит масштабировать.'];
+ else lv=['масштаб','Ритм держится и просадки нет: можно аккуратно поднимать планку.'];
+ k.push('Рычаг: '+lv[0],'План: '+f.posts7+'/'+tg);if(need>0)k.push('Нужно в день: '+kf(Math.round(need)));
+ o.push('Главный рычаг сейчас — '+lv[0]+'. '+lv[1]);
+ o.push('Итог недели: '+fmt(f.l7*7)+' просмотров'+(f.tr!=null?' ('+(f.tr>=0?'+':'−')+pc(Math.abs(f.tr))+' к прошлой)':'')+', '+rv(f.posts7)+(f.perK>0?', ≈ '+M(f.l7*7/1000*f.perK):'')+'.');
+ if(need>0&&f.l7>0)o.push('Для цели в срок нужно '+fmt(need)+' просмотров в день, сейчас '+fmt(f.l7)+': '+(f.l7>=need?'идёшь с запасом '+pc(f.l7/need-1)+'.':'не хватает '+fmt(need-f.l7)+' в день.'));
+ else if(f.goal>0&&f.rem>0&&!f.left)o.push('У целей нет даты, поэтому нужный темп не посчитать: поставь срок на вкладке «Цели».');
+ t.push('Выложи '+rv(tg)+': по '+f.plan+' в день, без пропусков'+(f.posts7<tg?' (на прошлой неделе было '+f.posts7+')':'')+'.');
+ if(top)t.push('Сними 2 вариации лучшего ролика «'+tt(top.t)+'»: тот же формат и крючок, новая тема.');
+ if(f.bg>=0)t.push('Самый сильный ролик недели поставь на '+WDA[f.bg]+': в этот день в среднем '+fmt(f.bv)+' просмотров.');
+ t.push(f.tr!=null&&f.tr<=-.1?'В каждом ролике перепиши первые 2 секунды: вопрос, результат или конфликт сразу в кадре.':'Один ролик из семи отдай под эксперимент с новым форматом, остальные делай по проверенной схеме.');
+ if(need>f.l7&&f.l7>0)t.push('Чтобы успеть к сроку, темп должен вырасти в '+dec(need/f.l7)+' раза. Реальный шаг на эту неделю — выйти на '+fmt(Math.min(need,f.l7*1.3))+' в день.');
+ {const g=Math.max(proj(f,7),need*7);if(g>0)t.push('Контрольная точка — '+dfut(c,7)+': в трекере должно быть не меньше '+fmt(f.views+g)+' просмотров. Если меньше, разбери удержание в YouTube Studio и поменяй крючок.')}
+ return{k,o,h:'План на 7 дней',t,ol:1}}
+function aiClaude(f,c){const o=[],t=[],k=[],top=f.top[0],tg=f.plan*7;
+ if(f.vol!=null){k.push('Стабильность: '+(f.vol>=.8?'низкая':f.vol>=.4?'средняя':'высокая'));o.push(f.vol>=.8?'Просмотры сильно скачут: обычное отклонение от среднего — около '+pc(f.vol)+'. Один удачный или провальный день здесь ничего не значит, смотри на недели.':f.vol>=.4?'Просмотры идут волнами (разброс около '+pc(f.vol)+' от среднего). Для Shorts это нормально, но оценивать лучше по неделям, а не по дням.':'Просмотры довольно стабильны (разброс около '+pc(f.vol)+' от среднего): на такие цифры можно опираться в планах.')}
+ else o.push('Данных пока мало ('+dn(f.span)+' учёта), поэтому любые выводы предварительные: через пару недель картина станет честнее.');
+ if(f.share!=null){k.push('Доля лидера: '+pc(f.share));o.push(f.share>=.5?'Риск: «'+tt(top.t)+'» даёт '+pc(f.share)+' всех просмотров. Если он перестанет набирать, общие цифры просядут вместе с ним.':f.share>=.25?'Лидер «'+tt(top.t)+'» даёт '+pc(f.share)+' просмотров: заметная доля, но целиком от него результат не зависит.':'Просмотры распределены по роликам ровно (у лидера '+pc(f.share)+'): это устойчивая база.')}
+ if(f.goal>0&&f.rem<=0)o.push('Деньги на цели уже набраны. Следующую цель стоит ставить с запасом по сроку, а не впритык.');
+ else if(f.goal>0&&f.left&&f.l7>0){const m=f.rub+f.l7*f.left/1000*f.perK,q=m/f.goal;k.push('К сроку: ≈ '+pc(Math.min(q,9.99))+' цели');o.push(q>=1?'Цель в срок реальна без ускорения: к дедлайну выйдет около '+M(m)+' при нужных '+M(f.goal)+'.':'Честно: при текущем темпе к сроку наберётся около '+pc(q)+' цели ('+M(m)+' из '+M(f.goal)+'). Варианты — поднять темп в '+dec(f.rem/f.left/f.l7)+' раза или сдвинуть срок на '+dn(f.rem/f.l7-f.left)+'.')}
+ else if(f.goal>0&&!f.left)o.push('У целей нет срока, поэтому темп не с чем сравнить: поставь дату, и станет видно, успеваешь ли.');
+ if(f.l7>0){const g=f.sl!=null?f.sl*7/f.l7:0;o.push('Дальняя дистанция: если просто держать нынешний темп, за 90 дней это ещё ≈ '+fmt(f.l7*90)+' просмотров'+(f.perK>0?' и ≈ '+M(f.l7*90/1000*f.perK):'')+'.'+(Math.abs(g)>=.1?' Тренд сейчас '+(g>0?'в плюс':'в минус')+', но закладывать его в планы рано.':''))}
+ if(f.V0===0&&f.streak>0)o.push('Серия ('+dn(f.streak)+') сегодня под угрозой: ролика за сегодня ещё нет.');
+ if(f.goal>0&&f.rem>0&&f.perK>0)t.push('Доход посчитан по CPM '+cpmTxt()+'. Если реальный окажется на 20% ниже, до цели понадобится ещё '+fmt(f.need*.25)+' просмотров сверху: держи запас.');
+ t.push(f.posts7<tg?'План '+f.plan+' в день выполнен на '+pc(f.posts7/tg)+'. Лучше честно снизить планку до посильной и держать её без пропусков, чем срываться.':'План по роликам держишь. Следи, чтобы темп не стоил выгорания: день отдыха в неделю статистику не ломает.');
+ if(f.share!=null&&f.share>=.5)t.push('Разбери, что именно сработало в лидере (тема, первые секунды, длина), и проверь это на 3–4 новых роликах: зависимость от одного хита лечится только новыми хитами.');
+ if(f.tr!=null)t.push('Сравнивай неделю с неделей: сейчас '+(f.tr>=0?'+':'−')+pc(Math.abs(f.tr))+'. Тревожиться стоит, если минус держится две недели подряд.');
+ if(f.subs!=null&&f.cv>0){const q=f.subs/f.cv*1000;t.push('Подписчики — долгий актив: сейчас '+dec(q)+' на 1000 просмотров. '+(q<3?'Это немного: серии с продолжением превращают случайных зрителей в постоянных.':'Это хороший уровень: аудитория возвращается.'))}
+ t.push('Трекер видит только добавленные ролики. Если выкладываешь больше, добавляй их, иначе темп и прогнозы будут занижены.');
+ return{k,o,h:'На что смотреть дальше',t}}
+function aiYt(f,c){const o=[],t=[],k=[],top=f.top[0],w7=f.l7*7;
+ k.push('7 дней: '+kf(Math.round(w7)));
+ if(f.base>0){const q=(f.l7-f.base)/f.base;k.push((q>=0?'+':'−')+pc(Math.abs(q))+' к обычному');o.push('За последние 7 дней — '+fmt(w7)+' просмотров: это на '+pc(Math.abs(q))+(q>=0?' выше':' ниже')+' обычного (в среднем '+fmt(f.base*7)+' за неделю).')}
+ else o.push('За последние 7 дней — '+fmt(w7)+' просмотров. Сравнение с обычным уровнем появится после второй недели учёта.');
+ if(f.nv>=3)k.push('Типичный ролик: '+kf(f.med));
+ if(f.top.length)o.push('Лучшие ролики: '+f.top.map((v,i)=>(i+1)+') «'+tt(v.t)+'» — '+fmt(v.w)).join('; ')+'.');
+ if(f.nv>=3)o.push('Типичный ролик набирает около '+fmt(f.med)+' просмотров. '+(f.hits?f.hits+' из '+f.nv+' набрали вдвое больше обычного.':'Роликов, которые набрали вдвое больше обычного, пока нет.'));
+ o.push('Публикации: '+rv(f.posts7)+' за 7 дней, активных дней — '+f.act7+' из 7.');
+ if(f.subs!=null)o.push('Подписчики: '+fmt(f.subs)+(f.nextS?', до отметки '+fmt(f.nextS)+' осталось '+fmt(f.nextS-f.subs):'')+'.');
+ if(top&&f.med>0&&f.nv>=3&&top.w>=2*f.med)t.push('Ролик «'+tt(top.t)+'» идёт лучше обычного: выпусти продолжение, пока он набирает.');
+ if(f.bg>=0)t.push('Зрители активнее всего '+WDV[f.bg]+' (в среднем '+fmt(f.bv)+' просмотров): планируй сильные ролики на этот день.');
+ if(f.tr!=null&&f.tr<=-.1)t.push('Просмотры на '+pc(-f.tr)+' ниже, чем неделю назад: проверь в Studio удержание первых секунд и источники трафика.');
+ if(f.act7<5)t.push('Регулярность помогает показам: старайся публиковать не реже 5 дней в неделю, сейчас '+f.act7+'.');
+ t.push('В Studio смотри показатель «Продолжили смотреть / пролистали»: чем выше доля продолживших, тем шире показы в ленте Shorts.','Отвечай на комментарии в первые часы после публикации и закрепляй вопрос к зрителям.');
+ return{k,o,h:'Рекомендации',t}}
+const AIF={gemini:aiGemini,gpt:aiGpt,claude:aiClaude,youtube:aiYt};
+function renderAI(c){const f=facts(c),sig=JSON.stringify(f);if(sig===AIS)return;AIS=sig;const th=AIF[f.th]?f.th:'gemini',box=$('ait'),r=f.days?AIF[th](f,c):{k:[],o:['Данных пока нет: добавь ролики или внеси первые дни, и здесь появится разбор с прогнозом.'],h:'С чего начать',t:['Добавь хотя бы 3 ролика, чтобы появилась динамика.','Подключи ключ API на вкладке «Каналы»: просмотры и подписчики будут обновляться сами.','Поставь цель с датой на вкладке «Цели»: от неё считается нужный темп.']};
+ $('aih').textContent=ANM[th];box.innerHTML='';if(r.k.length){const g=el('div','chips');r.k.forEach(x=>g.append(el('span','chip',x)));box.append(g)}
+ r.o.forEach(x=>box.append(el('p',null,x)));const u=el(r.ol?'ol':'ul');r.t.forEach(x=>u.append(el('li',null,x)));box.append(el('b',null,r.h),u)}
 let TR=null;
 const dmy=d=>('0'+d.getDate()).slice(-2)+'.'+('0'+(d.getMonth()+1)).slice(-2)+'.'+d.getFullYear(),hm=d=>('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);
-async function gj(url,key){const r=await fetch(url+'&key='+encodeURIComponent(key)),d=await r.json();if(d.error)throw new Error(d.error.message);return d}
+async function gj(url,key){const r=await nf(url+'&key='+encodeURIComponent(key)),d=await r.json();if(d.error)throw new Error(d.error.message);return d}
 async function collect(){const ch=AC();if(!ch)throw new Error('Сначала добавь канал на вкладке «Каналы».');const key=kv(ch.kid);if(!key)throw new Error('Нет API-ключа: добавь его на вкладке «Каналы».');
  const f=new Date($('tfrom').value+'T00:00:00'),t=new Date($('tto').value+'T23:59:59.999');if(isNaN(f)||isNaN(t)||f>t)throw new Error('Проверь даты.');
  const up='UU'+ch.cid.slice(2),ids=[];let tok='',pg_=0;
@@ -531,7 +635,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape')ctp();if(e.altKey||e.ctrlKey|
 function norm(){delete S.ai;const lg={yt:['youtube'],ytd:['youtube','dark'],sun:['claude'],sunset:['claude'],mint:['gpt'],ocean:['gemini'],dark:['gemini','dark'],neon:['gemini','dark'],amoled:['gemini','dark']}[S.theme];if(lg){S.theme=lg[0];if(lg[1])S.mode=lg[1]}if(!MODES.some(m=>m[0]===S.mode))S.mode='auto';S.goals=S.goals.filter(g=>g&&g.cur);S.channels=S.channels.filter(x=>x&&x.cid);if(!S.fx||typeof S.fx!=='object')S.fx={};S.fx=Object.assign({RUB:80,USD:1,KZT:480},S.fx);S.fx.USD=1;['RUB','KZT'].forEach(k=>{if(!(S.fx[k]>0))S.fx[k]=DEF.fx[k]});if(!SYM[S.cur])S.cur='RUB';if(!SYM[S.cpmC])S.cpmC='USD';if(!(S.cpmV>=0))S.cpmV=null;if(S.lite==null)S.lite=RM||(navigator.hardwareConcurrency||8)<=4||(navigator.deviceMemory||8)<=4}
 const vid=u=>{const m=u.match(/(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/);return m?m[1]:null};
 const ST=(m,e)=>{const n=$('sst');n.textContent=m;n.style.color=e?'var(--red)':'var(--ink)'};
-async function api(ids){const k=kv();if(!k){jump(5);throw new Error('Сначала добавь API-ключ на вкладке «Каналы».')}const r=await fetch(YT+ids.join(',')+'&key='+encodeURIComponent(k)),d=await r.json();if(d.error)throw new Error(d.error.message);return d.items||[]}
+async function api(ids){const k=kv();if(!k){jump(5);throw new Error('Сначала добавь API-ключ на вкладке «Каналы».')}const r=await nf(YT+ids.join(',')+'&key='+encodeURIComponent(k)),d=await r.json();if(d.error)throw new Error(d.error.message);return d.items||[]}
 function dayRow(t){return S.log[t]||(S.log[t]={v:0,w:0})}
 const ids_=t=>[...new Set([...(t||'').matchAll(/(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/g)].map(m=>m[1]))];
 async function addMany(text){const all=ids_(text);if(!all.length)return ST('Не нашёл ссылок на Shorts.',1);
@@ -545,13 +649,13 @@ async function addMany(text){const all=ids_(text);if(!all.length)return ST('Не
 $('vadd').onclick=()=>addMany($('vu').value);
 $('vu').addEventListener('keydown',e=>{if(e.key==='Enter')addMany($('vu').value)});
 $('vu').addEventListener('paste',e=>{const t=(e.clipboardData||window.clipboardData).getData('text');if(ids_(t).length){e.preventDefault();$('vu').value=t;addMany(t)}});
+async function pullViews(){let delta=0,changed=false;const t=iso(new Date());
+ for(let i=0;i<S.videos.length;i+=50){const ch=S.videos.slice(i,i+50),items=await api(ch.map(v=>v.id));
+  items.forEach(it=>{const v=ch.find(x=>x.id===it.id);if(!v)return;const w=parseInt(it.statistics.viewCount||'0',10);if(w>v.views)delta+=w-v.views;if(w!==v.views||v.title!==it.snippet.title)changed=true;v.views=w;v.title=it.snippet.title})}
+ if(delta>0){const d=dayRow(t);d.w=(+d.w||0)+delta}
+ addHours(delta);return{delta,changed}}
 $('sync').onclick=async()=>{if(!S.videos.length)return ST('Сначала добавь хотя бы один ролик.',1);const b=$('sync');b.disabled=true;ST('Синхронизация…');
- try{let delta=0;const t=iso(new Date());
-  for(let i=0;i<S.videos.length;i+=50){const ch=S.videos.slice(i,i+50),items=await api(ch.map(v=>v.id));
-   items.forEach(it=>{const v=ch.find(x=>x.id===it.id);if(!v)return;const w=parseInt(it.statistics.viewCount||'0',10);if(w>v.views)delta+=w-v.views;v.views=w;v.title=it.snippet.title})}
-  if(delta>0){const d=dayRow(t);d.w=(+d.w||0)+delta}
-  addHours(delta);
-  save();render();ST('Готово: прирост +'+fmt(delta)+' просмотров.')}
+ try{const r=await pullViews();save();render();ST('Готово: прирост +'+fmt(r.delta)+' просмотров.')}
  catch(e){ST('Ошибка: '+e.message,1)}finally{b.disabled=false}};
 function unlogVideo(v){
  const a=v.added,cnt=v.c!=null?!!v.c:!!(a&&S.log[a]&&+S.log[a].v>0);
@@ -582,7 +686,7 @@ try{const raw=localStorage.getItem(KEY);if(raw){const o=JSON.parse(raw);if(o&&ty
 norm();try{const o=localStorage.getItem(KEYAPI);if(o&&o[0]!=='{'&&!KL().length)KW([{id:'k0',label:'Основной',key:o}])}catch(e){}
 try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
 $('theme').innerHTML=IC.pal;MODES.forEach(m=>{const b=el('button',null,m[1]);b.dataset.m=m[0];b.onclick=()=>{S.mode=m[0];applyTheme();save()};$('seg').append(b)});
-TH.forEach(t=>{const b=el('button','pv');b.dataset.t=t[0];b.append(el('span',null,t[1]));b.onclick=()=>{S.theme=t[0];applyTheme();save()};$('pal').append(b)});
+TH.forEach(t=>{const b=el('button','pv');b.dataset.t=t[0];b.append(el('span',null,t[1]));b.onclick=()=>{S.theme=t[0];applyTheme();save();renderAI(calc())};$('pal').append(b)});
 DQ.addEventListener&&DQ.addEventListener('change',()=>{if(S.mode==='auto')applyTheme()});
 applyTheme();ready=true;go(0);render();
 if(S.auto&&Date.now()-(S.fxT||0)>432e5)fxu();try{localStorage.removeItem('shorts-tracker-ai-key')}catch(e){}autoRef();document.addEventListener('visibilitychange',()=>{if(!document.hidden)autoRef()});
@@ -590,11 +694,53 @@ if(S.auto&&Date.now()-(S.fxT||0)>432e5)fxu();try{localStorage.removeItem('shorts
 $('ch').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pickDay(e.target)}else if(e.key==='ArrowLeft'||e.key==='ArrowRight'){const i=CHD.indexOf(CHS)+(e.key==='ArrowRight'?1:-1);if(i>=0&&i<CHD.length){showDay(CHD[i]);const n=document.querySelectorAll('#ch .cb')[i];n&&n.focus()}}});
 $('wd').addEventListener('click',e=>{const w=e.target.closest('.wc');if(w)showWd(+w.dataset.i)});
 $('hm').addEventListener('click',e=>{const h=e.target.closest('.hc');if(h&&h.dataset.k)showHm(h.dataset.k)});
-function scrub(el,pick){el.style.touchAction='pan-y';let dn=false;el.addEventListener('pointerdown',e=>{dn=true;try{el.setPointerCapture(e.pointerId)}catch(_){}pick(e)});el.addEventListener('pointermove',e=>{if(dn||e.pointerType==='mouse')pick(e)});['pointerup','pointercancel','lostpointercapture'].forEach(t=>el.addEventListener(t,()=>{dn=false}))}
+function scrub(el,pick){el.style.touchAction='pan-y';let dn=false,le=null,raf=0;const go=e=>{le={clientX:e.clientX,clientY:e.clientY,pointerType:e.pointerType};if(!raf)raf=requestAnimationFrame(()=>{raf=0;pick(le)})};el.addEventListener('pointerdown',e=>{dn=true;try{el.setPointerCapture(e.pointerId)}catch(_){}pick(e)});el.addEventListener('pointermove',e=>{if(dn||e.pointerType==='mouse')go(e)});['pointerup','pointercancel','lostpointercapture'].forEach(t=>el.addEventListener(t,()=>{dn=false}))}
 function fxi(e,el,n){const r=el.getBoundingClientRect();return r.width?Math.max(0,Math.min(n-1,Math.floor((e.clientX-r.left)/r.width*n))):0}
 scrub($('hbars'),e=>{if(!HK.length||$('hbars').classList.contains('empty'))return;const k=HK[fxi(e,$('hbars'),HK.length)];if(k!==HS)showHero(k)});
 scrub($('ch'),e=>{if(!CHD.length)return;const k=CHD[fxi(e,$('ch'),CHD.length)];if(k!==CHS)showDay(k)});
 scrub($('cum'),e=>{if(!CUMD)return;const r=$('cum').getBoundingClientRect();if(!r.width)return;const x=(e.clientX-r.left)/r.width*600,i=Math.max(0,Math.min(CUMD.N-1,Math.round((x-10)/580*(CUMD.N-1))));if(i!==CUMI)cumMark(i)});
 scrub($('hm'),e=>{const t=document.elementFromPoint(e.clientX,e.clientY),h=t&&t.closest&&t.closest('.hc');if(h&&h.dataset.k&&h.dataset.k!==HM)showHm(h.dataset.k)});
+
+/* ---- live updates: every 10 s, only while a person is here ---- */
+let LT=0,LBUSY=0,LERR=0,LDEAD=0,LTICK=0,LUSER=Date.now(),LSAVE=0,LWARN=0;
+const liveOK=()=>S.live!==false&&document.visibilityState==='visible'&&S.videos.length>0&&!!kv()&&Date.now()-LUSER<3*6e4&&Date.now()>LDEAD;
+function liveBadge(){const b=$('lvh');if(b)b.hidden=!(LT&&liveOK())}
+function liveSched(ms){clearTimeout(LT);LT=setTimeout(liveTick,ms);liveBadge()}
+function liveKick(){LUSER=Date.now();if(!LT&&!LBUSY&&liveOK())liveSched(600)}
+async function liveTick(){if(!liveOK()){LT=0;liveBadge();return}
+ if(LBUSY||$('sync').disabled){liveSched(3000);return}
+ LBUSY=1;try{const r=await pullViews();LERR=0;LTICK++;
+  if(r.changed){if(r.delta>0||Date.now()-LSAVE>6e4){save();LSAVE=Date.now()}render()}
+  if(LTICK%20===0&&S.channels.length)await chr()}
+ catch(e){LERR++;if(/quota|exceed|limit/i.test(e.message)){LDEAD=Date.now()+30*6e4;if(!LWARN){LWARN=1;toast('Лимит API исчерпан, живое обновление поставлено на паузу.')}}}
+ finally{LBUSY=0}
+ liveSched(Math.min(12e4,3e3*Math.pow(2,LERR)))}
+['pointerdown','touchstart','keydown','wheel'].forEach(t=>document.addEventListener(t,liveKick,{passive:true,capture:true}));
+document.addEventListener('visibilitychange',()=>{if(document.hidden){clearTimeout(LT);LT=0;liveBadge()}else liveKick()});
+setTimeout(liveKick,1500);
+
+/* ---- pull to refresh ---- */
+let PTRB=0;
+async function refreshNow(){if(PTRB)return;PTRB=1;const box=$('ptr');box.classList.add('ld');box.querySelector('span').textContent='Обновляю…';
+ try{if(!S.videos.length||!kv()){toast('Для обновления нужны ролики и API-ключ.')}
+  else{const r=await pullViews();save();LSAVE=Date.now();if(S.channels.length)await chr();render();toast(r.delta>0?'Обновлено: +'+fmt(r.delta)+' просмотров':'Обновлено: новых просмотров нет')}}
+ catch(e){toast('Ошибка: '+e.message)}
+ finally{PTRB=0;box.classList.remove('ld','rdy');box.style.transition='transform .25s,opacity .25s';box.style.transform='translate(-50%,-56px)';box.style.opacity=0;setTimeout(()=>box.style.transition='',300)}}
+(function(){const box=document.createElement('div');box.id='ptr';box.innerHTML='<b>↓</b><span>Потяни, чтобы обновить</span>';document.body.appendChild(box);
+ const H=70,txt=box.querySelector('span');let y0=0,x0=0,pg=null,pull=0,act=false;
+ const hide=()=>{box.classList.remove('rdy');box.style.transition='transform .25s,opacity .25s';box.style.transform='translate(-50%,-56px)';box.style.opacity=0;setTimeout(()=>box.style.transition='',300)};
+ document.addEventListener('touchstart',e=>{if(PTRB||e.touches.length!==1)return;const p=e.target.closest&&e.target.closest('.pg');if(!p||p.scrollTop>0){pg=null;return}pg=p;y0=e.touches[0].clientY;x0=e.touches[0].clientX;pull=0;act=false},{passive:true});
+ document.addEventListener('touchmove',e=>{if(!pg)return;const t=e.touches[0],dy=t.clientY-y0,dx=t.clientX-x0;
+  if(!act){if(dy>10&&dy>Math.abs(dx)*1.6&&pg.scrollTop<=0)act=true;else{if(Math.abs(dx)>16||dy<-6)pg=null;return}}
+  if(pg.scrollTop>0){act=false;pg=null;hide();return}
+  pull=Math.min(H*1.6,dy*.5);const rdy=pull>=H*.8;box.style.transform='translate(-50%,'+(pull-56)+'px)';box.style.opacity=Math.min(1,pull/36);
+  if(box.classList.contains('rdy')!==rdy){box.classList.toggle('rdy',rdy);txt.textContent=rdy?'Отпусти, чтобы обновить':'Потяни, чтобы обновить'}},{passive:true});
+ const end=()=>{if(!pg||!act){pg=null;return}const go=pull>=H*.8;pg=null;act=false;if(go){box.style.transition='transform .2s';box.style.transform='translate(-50%,10px)';refreshNow()}else hide()};
+ document.addEventListener('touchend',end,{passive:true});document.addEventListener('touchcancel',()=>{if(act)hide();pg=null;act=false},{passive:true})})();
+$('livechk').onchange=()=>{S.live=$('livechk').checked;save();if(S.live)liveKick();else{clearTimeout(LT);LT=0;liveBadge()}};
+$('nettest').onclick=async()=>{const b=$('nettest');b.disabled=true;CS('Проверяю связь…');const out=[];
+ const chk=async(name,url)=>{const t0=performance.now();try{const c=new AbortController(),tm=setTimeout(()=>c.abort(),8000);const r=await fetch(url,{signal:c.signal});clearTimeout(tm);out.push(name+': ок, '+Math.round(performance.now()-t0)+' мс'+(r.ok?'':' (код '+r.status+')'));return 1}catch(e){out.push(name+': нет ответа'+(e.name==='AbortError'?' (таймаут 8 с)':''));return 0}};
+ const a=await chk('YouTube','https://www.googleapis.com/discovery/v1/apis?name=youtube&fields=kind'),f=await chk('Курсы валют','https://open.er-api.com/v6/latest/USD');
+ CS(out.join(' · ')+(a?'':'. Если у YouTube нет ответа: выключи VPN и блокировщик, отключи Private DNS и открой файл прямо в Chrome, а не в просмотрщике.'),!a);b.disabled=false};
 document.addEventListener('visibilitychange',()=>document.documentElement.classList.toggle('fxp',document.hidden));
 </script></body></html>
